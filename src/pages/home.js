@@ -1,10 +1,6 @@
 import React from "react";
-import Flicker from "../components/flicker";
+import { FlickerContainer } from "../containers/flicker";
 
 export default function Home() {
-  return (
-    <Flicker.Container>
-      <p>Flick flick</p>
-    </Flicker.Container>
-  );
+  return <FlickerContainer />;
 }

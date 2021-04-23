@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Item, Inner } from "./styles/flicker";
+import { Container, Item, Inner, Title } from "./styles/flicker";
 
 export default function Flicker({ children, ...restProps }) {
   return (
@@ -9,6 +9,10 @@ export default function Flicker({ children, ...restProps }) {
   );
 }
 
-Flicker.Container = function JumbotronContainer({ children, ...restProps }) {
+Flicker.Container = function FlickerContainer({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
+};
+
+Flicker.Title = function FlickerTitle({ children, ...restProps }) {
+  return <Title {...restProps}>{children}</Title>;
 };
