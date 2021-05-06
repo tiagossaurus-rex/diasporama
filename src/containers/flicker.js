@@ -4,7 +4,7 @@ import Flicker from "../components/flicker";
 export function FlickerContainer() {
   return (
     <Flicker.Container>
-      <Flicker.Title>Flick flick fffff</Flicker.Title>
+      <Flicker.Title>Flick flick fffff foohhh!!</Flicker.Title>
     </Flicker.Container>
   );
 }
