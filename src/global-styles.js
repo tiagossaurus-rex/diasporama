@@ -15,8 +15,8 @@ url("//db.onlinewebfonts.com/t/d18acb2db67fb3aae1ccd198d37a10e9.woff") format("w
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        background-color: #000000;
-        color: white;
+        background-color: white;
+        color: black;
         font-size: 16px;
         margin: 0;
     }
