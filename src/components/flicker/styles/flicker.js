@@ -20,9 +20,10 @@ export const Item = styled.div`
 
 export const Container = styled.div`
   background: coral;
+  padding: 2px;
 `;
 export const Title = styled.h1`
-  font-family: "YoungSerif", Helvetica, Arial, sans-serif;
+  font-family: "YoungSerif", Trebuchet, Arial, sans-serif;
   font-size: 50px;
   line-height: 1.1;
   margin-bottom: 8px;
@@ -47,8 +48,7 @@ export const Paragraph = styled.p`
 export const Figure = styled.figure`
   background: #fff;
   margin: 0;
-  position: relative;
-  width: 50vw;
+  width: 100vw;
 `;
 
 export const FigCaption = styled.figcaption`
@@ -68,12 +68,15 @@ export const TextFit = styled.div`
   z-index: 1;
 `;
 
-export const ImageFit = styled.img`
-.imageFit {
+export const ImageFit = styled.div`
   height: 100vh;
-  object-fit: cover;
   position: fixed;
   width: 50%;
+`;
+
+export const Image = styled.img`
+  max-width: 100%;
+  height: auto;
 `;
 
 export const NoTextFit = styled.div`

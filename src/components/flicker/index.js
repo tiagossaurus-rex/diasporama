@@ -10,6 +10,7 @@ import {
   FigCaption,
   TextFit,
   ImageFit,
+  Image,
   NoTextFit,
   InnerTitle,
 } from "./styles/flicker";
@@ -49,6 +50,9 @@ Flicker.FigCaption = function FlickerFigCaption({ children, ...restProps }) {
 };
 Flicker.TextFit = function FlickerTextFit({ children, ...restProps }) {
   return <TextFit {...restProps}>{children}</TextFit>;
+};
+Flicker.Image = function FlickerImage({ ...restProps }) {
+  return <Image {...restProps} />;
 };
 Flicker.ImageFit = function FlickerImageFit({ children, ...restProps }) {
   return <ImageFit {...restProps}>{children}</ImageFit>;

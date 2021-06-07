@@ -11,6 +11,9 @@ export function FlickerContainer() {
             <Flicker.Title>{diaporama.title}</Flicker.Title>
             <Flicker.Para>{diaporama.paragraph}</Flicker.Para>
           </Flicker.Section>
+          <Flicker.Figure>
+            <Flicker.Image src={diaporama.text} alt={diaporama.alt} />
+          </Flicker.Figure>
         </Flicker>
       ))}
     </Flicker.Container>
