@@ -1,11 +1,17 @@
 import React from "react";
-// import FlickerData from "../fixtures/diaporama.json";
+import flickerData from "../fixtures/diaporama.json";
 import Flicker from "../components/flicker";
 
 export function FlickerContainer() {
   return (
-    <Flicker.Container>
-      <Flicker.Title>Flick flick fffff phewwww!!</Flicker.Title>
-    </Flicker.Container>
+    <Flicker.Section>
+      {flickerData.map((diaporama) => (
+        <Flicker key={diaporama.id}>
+          <Flicker.Title>{diaporama.title}</Flicker.Title>
+          <Flicker.Paragraph>{diaporama.paragraph}</Flicker.Paragraph>
+          <Flicker.ImageFit alt={diaporama.alt} src={diaporama.image} />
+        </Flicker>
+      ))}
+    </Flicker.Section>
   );
 }

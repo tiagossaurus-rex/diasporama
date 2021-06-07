@@ -4,7 +4,6 @@ export const Inner = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: ${({ direction }) => direction};
   max-width: 1100px;
   margin: auto;
   width: 100%;
@@ -18,7 +17,15 @@ export const Item = styled.div`
   display: flex;
 `;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+background-color: black;
+    
+    @media (max-width: 1000px) {
+
+            margin-bottom: 50px;
+        }
+    }
+`;
 
 export const Title = styled.h1`
   font-family: "YoungSerif", Helvetica, Arial, sans-serif;
@@ -81,22 +88,3 @@ export const InnerTitle = styled.h2`
   text-decoration: underline overline;
   font-family: "YoungSerif", sans-serif;
 `;
-
-// .notext {
-
-// }
-//new styles
-
-// p {
-
-// }
-
-// .text {
-
-// }
-
-// }
-
-// h2 {
-
-// }
