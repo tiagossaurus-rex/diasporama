@@ -4,14 +4,12 @@ import {
   Item,
   Inner,
   Title,
-  Pane,
-  BoxBlack,
-  BoxClear,
+  Figure,
+  FigCaption,
+  TextFit,
   ImageFit,
-  Text,
-  NoText,
-  ArgonauteText,
-  DiapoText,
+  NoTextFit,
+  InnerTitle,
 } from "./styles/flicker";
 
 export default function Flicker({
@@ -34,36 +32,22 @@ Flicker.Title = function FlickerTitle({ children, ...restProps }) {
   return <Title {...restProps}>{children}</Title>;
 };
 
-Flicker.Pane = function FlickerPane({ children, ...restProps }) {
-  return <Pane {...restProps}>{children}</Pane>;
+Flicker.Figure = function FlickerFigure({ children, ...restProps }) {
+  return <Figure {...restProps}>{children}</Figure>;
 };
 
-Flicker.BoxBlack = function FlickerBoxBlack({ children, ...restProps }) {
-  return <BoxBlack {...restProps}>{children}</BoxBlack>;
+Flicker.FigCaption = function FlickerFigCaption({ children, ...restProps }) {
+  return <FigCaption {...restProps}>{children}</FigCaption>;
 };
-
-Flicker.BoxClear = function FlickerBoxClear({ children, ...restProps }) {
-  return <BoxClear {...restProps}>{children}</BoxClear>;
+Flicker.TextFit = function FlickerTextFit({ children, ...restProps }) {
+  return <TextFit {...restProps}>{children}</TextFit>;
 };
-
 Flicker.ImageFit = function FlickerImageFit({ children, ...restProps }) {
   return <ImageFit {...restProps}>{children}</ImageFit>;
 };
-
-Flicker.Text = function FlickerText({ children, ...restProps }) {
-  return <Text {...restProps}>{children}</Text>;
+Flicker.NoTextFit = function NoTextFit({ children, ...restProps }) {
+  return <NoTextFit {...restProps}>{children}</NoTextFit>;
 };
-
-Flicker.NoText = function FlickerNoText({ children, ...restProps }) {
-  return <NoText {...restProps}>{children}</NoText>;
-};
-
-Flicker.ArgonauteText = function FlickerArgonauteText({
-  children,
-  ...restProps
-}) {
-  return <ArgonauteText {...restProps}>{children}</ArgonauteText>;
-};
-Flicker.DiapoText = function FlickerDiapoText({ children, ...restProps }) {
-  return <DiapoText {...restProps}>{children}</DiapoText>;
+Flicker.InnerTitle = function InnerTitle({ children, ...restProps }) {
+  return <InnerTitle {...restProps}>{children}</InnerTitle>;
 };

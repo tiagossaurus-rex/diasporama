@@ -26,63 +26,77 @@ export const Title = styled.h1`
   line-height: 1.1;
   margin-bottom: 8px;
 `;
-export const Pane = styled.div`
-  width: 50%;
-`;
 
-export const BoxBlack = styled.div`
+export const Section = styled.section`
+  display: flex;
   height: 100vh;
-  background: black;
-  position: absolute;
-
-  padding: 100%;
-  font-weight: 900;
-  font-size: 40px;
-  font-style: bold;
-  text-decoration: underline overline;
-  cursor: none;
+  justify-content: space-between;
 `;
 
-export const BoxClear = styled.div`
-  margin-top: 0;
-  background: white;
+export const Paragraph = styled.p`
+  color: black;
+  font-size: 36px;
+`;
+
+export const Figure = styled.figure`
+  background: #fff;
+  margin: 0;
+  position: relative;
+  width: 50vw;
+`;
+
+export const FigCaption = styled.figcaption`
+  color: red;
+  font-size: 30px;
+  z-index: 1;
+`;
+export const TextFit = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0);
+  z-index: 1;
 `;
 
 export const ImageFit = styled.img`
-  margin-top: 0;
-  width: 100vw;
+.imageFit {
   height: 100vh;
   object-fit: cover;
+  position: fixed;
+  width: 50%;
 `;
 
-export const Text = styled.h2`
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  position: absolute;
-  padding: 25%;
-  margin: 0 auto;
-  font-family: "YoungSerif", sans-serif;
-  font-weight: 900;
-  font-size: 40px;
-  font-style: bold;
-  text-decoration: underline overline;
-`;
-
-export const NoText = styled.h2`
+export const NoTextFit = styled.div`
   display: none;
   visibility: hidden;
 `;
 
-export const ArgonauteText = styled.h1`
-  font-size: 6rem;
-  color: black;
-  line-height: 2em;
+export const InnerTitle = styled.h2`
+  font-weight: 900;
+  font-size: 10vh;
+  text-decoration: underline overline;
+  font-family: "YoungSerif", sans-serif;
 `;
 
-export const DiapoText = styled.h2`
-  height: 100px;
-  background-color: white;
-  color: black;
-  font-size: 10px;
-`;
+// .notext {
+
+// }
+//new styles
+
+// p {
+
+// }
+
+// .text {
+
+// }
+
+// }
+
+// h2 {
+
+// }

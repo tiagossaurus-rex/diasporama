@@ -12,8 +12,8 @@ url("//db.onlinewebfonts.com/t/d18acb2db67fb3aae1ccd198d37a10e9.woff") format("w
  url("//db.onlinewebfonts.com/t/d18acb2db67fb3aae1ccd198d37a10e9.svg#YoungSerif") format("svg"); }
  
     html, body {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
+        font-family: "Josefin Sans", sans-serif;
+        text-rendering: optimizeLegibility;
         -moz-osx-font-smoothing: grayscale;
         background: rgba(237, 249, 161, 1);
         text-rendering: optimizeLegibility;
@@ -21,5 +21,7 @@ url("//db.onlinewebfonts.com/t/d18acb2db67fb3aae1ccd198d37a10e9.woff") format("w
         color: #6ddfa8;
         font-size: 16px;
         margin: 0;
+
+        
     }
 `;
