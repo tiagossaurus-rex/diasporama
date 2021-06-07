@@ -7,31 +7,30 @@ export const Inner = styled.div`
   max-width: 1100px;
   margin: auto;
   width: 100%;
-
-  @media (max-width: 1000px) {
-    flex-direction: row;
-  }
 `;
 
 export const Item = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  width: 100%;
 `;
 
 export const Container = styled.div`
-background-color: black;
-    
-    @media (max-width: 1000px) {
-
-            margin-bottom: 50px;
-        }
-    }
+  background: coral;
 `;
-
 export const Title = styled.h1`
   font-family: "YoungSerif", Helvetica, Arial, sans-serif;
   font-size: 50px;
   line-height: 1.1;
   margin-bottom: 8px;
+`;
+
+export const Para = styled.p`
+  color: black;
+  font-size: 10px;
 `;
 
 export const Section = styled.section`

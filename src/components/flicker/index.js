@@ -3,7 +3,9 @@ import {
   Container,
   Item,
   Inner,
+  Section,
   Title,
+  Para,
   Figure,
   FigCaption,
   TextFit,
@@ -32,6 +34,12 @@ Flicker.Title = function FlickerTitle({ children, ...restProps }) {
   return <Title {...restProps}>{children}</Title>;
 };
 
+Flicker.Section = function FlickerSection({ children, ...restProps }) {
+  return <Section {...restProps}>{children}</Section>;
+};
+Flicker.Para = function FlickerPara({ children, ...restProps }) {
+  return <Para {...restProps}>{children}</Para>;
+};
 Flicker.Figure = function FlickerFigure({ children, ...restProps }) {
   return <Figure {...restProps}>{children}</Figure>;
 };

@@ -4,14 +4,15 @@ import Flicker from "../components/flicker";
 
 export function FlickerContainer() {
   return (
-    <Flicker.Section>
+    <Flicker.Container>
       {flickerData.map((diaporama) => (
         <Flicker key={diaporama.id}>
-          <Flicker.Title>{diaporama.title}</Flicker.Title>
-          <Flicker.Paragraph>{diaporama.paragraph}</Flicker.Paragraph>
-          <Flicker.ImageFit alt={diaporama.alt} src={diaporama.image} />
+          <Flicker.Section>
+            <Flicker.Title>{diaporama.title}</Flicker.Title>
+            <Flicker.Para>{diaporama.paragraph}</Flicker.Para>
+          </Flicker.Section>
         </Flicker>
       ))}
-    </Flicker.Section>
+    </Flicker.Container>
   );
 }
