@@ -42,7 +42,7 @@ export const Section = styled.section`
 
 export const Paragraph = styled.p`
   color: black;
-  font-size: 36px;
+  font-size: 60px;
 `;
 
 export const Figure = styled.figure`

@@ -22,7 +22,7 @@ export default function Flicker({
 }) {
   return (
     <Item {...restProps}>
-      <Inner direction={children}>{children}</Inner>
+      <Inner {...restProps}>{children}</Inner>
     </Item>
   );
 }

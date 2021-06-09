@@ -6,17 +6,17 @@
       "diapo": [
         {
           "text": "Image1",
-          "image": "/images/animimage1.jpg",
+          "image": "./images/animimage1",
           "alt": "bla"
         },
         {
           "text": "Image2",
-          "image": "/images/animimage2.jpg",
+          "image": "./images/animimage2",
           "alt": "bla"
         },
         {
           "text": "Image3",
-          "image": "/images/animimage3.jpg",
+          "image": "./images/animimage3",
           "alt": "bla"
         }
       ]
@@ -25,21 +25,21 @@
     {
       "id": 2,
       "title": "WWWWWWWWoooo ooHHH",
-      "paragraph": "this is it",
+      "paragraph": "that is at",
       "diapo": [
         {
           "text": "GGood",
-          "image": "/images/animimage1.jpg",
+          "image": "./images/animimage1.jpg",
           "alt": "bla"
         },
         {
           "text": "Ohh00h000o!!",
-          "image": "/images/animimage2.jpg",
+          "image": "./images/animimage2.jpg",
           "alt": "bla"
         },
         {
           "text": "Brill!",
-          "image": "/images/animimage3.jpg",
+          "image": "./images/animimage3.jpg",
           "alt": "bla"
         }
       ]
