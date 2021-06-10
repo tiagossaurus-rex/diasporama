@@ -57,7 +57,7 @@ Flicker.Image = function FlickerImage({ ...restProps }) {
 Flicker.ImageFit = function FlickerImageFit({ children, ...restProps }) {
   return <ImageFit {...restProps}>{children}</ImageFit>;
 };
-Flicker.NoTextFit = function NoTextFit({ children, ...restProps }) {
+Flicker.NoTextFit = function FlickerNoTextFit({ children, ...restProps }) {
   return <NoTextFit {...restProps}>{children}</NoTextFit>;
 };
 Flicker.InnerTitle = function InnerTitle({ children, ...restProps }) {

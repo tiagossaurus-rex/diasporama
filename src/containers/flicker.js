@@ -13,7 +13,7 @@ export function FlickerContainer() {
             <Flicker.Para>{diaporama.paragraph}</Flicker.Para>
           </Flicker.Section>
           <Flicker.Figure>
-            <img
+            <Flicker.Image
               src={process.env.PUBLIC_URL + diaporama.diapo[0].image}
               alt={diaporama.diapo[0].alt}
             />

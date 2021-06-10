@@ -6,17 +6,17 @@
       "diapo": [
         {
           "text": "Image1",
-          "image": "./images/animimage1",
+          "image": "/images/animinage1.jpg",
           "alt": "bla"
         },
         {
           "text": "Image2",
-          "image": "./images/animimage2",
+          "image": "/images/animimage2.jpg",
           "alt": "bla"
         },
         {
           "text": "Image3",
-          "image": "./images/animimage3",
+          "image": "/images/animimage3.jpg",
           "alt": "bla"
         }
       ]
@@ -29,17 +29,17 @@
       "diapo": [
         {
           "text": "GGood",
-          "image": "./images/animimage1.jpg",
+          "image": "/images/animinage1.jpg",
           "alt": "bla"
         },
         {
           "text": "Ohh00h000o!!",
-          "image": "./images/animimage2.jpg",
+          "image": "/images/animimage2.jpg",
           "alt": "bla"
         },
         {
           "text": "Brill!",
-          "image": "./images/animimage3.jpg",
+          "image": "/images/animimage3.jpg",
           "alt": "bla"
         }
       ]
