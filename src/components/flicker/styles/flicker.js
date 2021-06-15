@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Inner = styled.div`
   border: 1px solid red;
-  background-color: ${({ backgroundColor }) => backgroundColor};
+  background-color: ${({ color }) => color};
   padding: 5%;
   display: flex;
   align-items: center;
@@ -13,27 +13,20 @@ export const Inner = styled.div`
   width: 100%;
 
   @media (max-width: 1000px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 `;
 
 export const Item = styled.div`
-  padding: 20px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1100px;
-  margin: auto;
-  width: 100%;
+  padding: 50px 5%;
+  overflow: hidden;
+  justify-content: center;
 `;
 export const Pane = styled.div`
-  width: 50%;
-  text-align: right;
-
+  margin: 0 100px;
   @media (max-width: 1000px) {
-    width: 100%;
-    padding: 0 45px;
-    text-align: center;
+    margin: 0;
   }
 `;
 export const Container = styled.div`
@@ -48,8 +41,6 @@ export const Title = styled.h1`
   font-size: 50px;
   line-height: 1.1;
   margin-bottom: 8px;
-  text-align: center;
-
   @media (max-width: 600px) {
     font-size: 35px;
   }
@@ -59,8 +50,6 @@ export const Paragraph = styled.p`
   font-size: 26px;
   font-weight: normal;
   line-height: normal;
-  padding-left: 55px;
-
   @media (max-width: 600px) {
     font-size: 18px;
   }
@@ -102,9 +91,11 @@ export const ImageFit = styled.div`
 `;
 
 export const Image = styled.img`
-  padding: 30px;
-  max-width: 100%;
-  height: auto;
+  max-width: 500px;
+  max-height: 500px;
+  @media (max-width: 500px) {
+    max-width: 90vw;
+  }
 `;
 
 export const NoTextFit = styled.div`
