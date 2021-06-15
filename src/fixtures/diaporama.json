@@ -4,6 +4,7 @@
       "title": "oh, what a thrill",
       "paragraph": "this is it",
       "direction": "row-reverse",
+      "color": "teal",
       
       "diapo": [
         {
@@ -31,6 +32,7 @@
       "title": "Woooo ooHHH",
       "paragraph": "that is at",
       "direction": "row",
+      "color": "rust",
       "diapo": [
         {
           "text": "GGood",

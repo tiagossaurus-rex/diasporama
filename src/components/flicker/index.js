@@ -16,10 +16,17 @@ import {
   InnerTitle,
 } from "./styles/flicker";
 
-export default function Flicker({ children, direction = "row", ...restProps }) {
+export default function Flicker({
+  children,
+  color = "color",
+  direction = "row",
+  ...restProps
+}) {
   return (
-    <Item {...restProps}>
-      <Inner direction={direction}>{children}</Inner>
+    <Item>
+      <Inner direction={direction} color={color}>
+        {children}
+      </Inner>
     </Item>
   );
 }

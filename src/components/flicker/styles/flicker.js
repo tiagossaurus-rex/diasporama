@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
 export const Inner = styled.div`
+  border: 1px solid red;
+  background-color: ${({ backgroundColor }) => backgroundColor};
+  padding: 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: ${({ direction }) => direction};
   max-width: 1100px;
-  margin: auto;
+  // margin: auto;
   width: 100%;
 
   @media (max-width: 1000px) {
@@ -15,6 +18,7 @@ export const Inner = styled.div`
 `;
 
 export const Item = styled.div`
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,8 +37,6 @@ export const Pane = styled.div`
   }
 `;
 export const Container = styled.div`
-  background-color: coral;
-
   @media (max-width: 1000px) {
     ${Item}:last-of-type h2 {
       margin-bottom: 50px;

@@ -7,7 +7,11 @@ export function FlickerContainer() {
   return (
     <Flicker.Container>
       {flickerData.map((diaporama) => (
-        <Flicker key={diaporama.id} direction={diaporama.direction}>
+        <Flicker
+          key={diaporama.id}
+          direction={diaporama.direction}
+          color={diaporama.color}
+        >
           <Flicker.Pane>
             <Flicker.Title>{diaporama.title}</Flicker.Title>
             <Flicker.Paragraph>{diaporama.paragraph}</Flicker.Paragraph>
