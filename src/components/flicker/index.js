@@ -2,10 +2,11 @@ import React from "react";
 import {
   Container,
   Item,
+  Pane,
   Inner,
   Section,
   Title,
-  Para,
+  Paragraph,
   Figure,
   FigCaption,
   TextFit,
@@ -31,11 +32,15 @@ Flicker.Title = function FlickerTitle({ children, ...restProps }) {
   return <Title {...restProps}>{children}</Title>;
 };
 
+Flicker.Pane = function FlickerPane({ children, ...restProps }) {
+  return <Pane {...restProps}>{children}</Pane>;
+};
+
 Flicker.Section = function FlickerSection({ children, ...restProps }) {
   return <Section {...restProps}>{children}</Section>;
 };
-Flicker.Para = function FlickerPara({ children, ...restProps }) {
-  return <Para {...restProps}>{children}</Para>;
+Flicker.Paragraph = function FlickerParagraph({ children, ...restProps }) {
+  return <Paragraph {...restProps}>{children}</Paragraph>;
 };
 Flicker.Figure = function FlickerFigure({ children, ...restProps }) {
   return <Figure {...restProps}>{children}</Figure>;

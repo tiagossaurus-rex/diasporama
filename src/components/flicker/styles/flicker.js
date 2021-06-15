@@ -22,32 +22,52 @@ export const Item = styled.div`
   margin: auto;
   width: 100%;
 `;
+export const Pane = styled.div`
+  width: 50%;
+  text-align: right;
 
+  @media (max-width: 1000px) {
+    width: 100%;
+    padding: 0 45px;
+    text-align: center;
+  }
+`;
 export const Container = styled.div`
-  background: coral;
-  padding: 2px;
+  background-color: coral;
+
+  @media (max-width: 1000px) {
+    ${Item}:last-of-type h2 {
+      margin-bottom: 50px;
+    }
+  }
 `;
 export const Title = styled.h1`
   font-family: "YoungSerif", Trebuchet, Arial, sans-serif;
   font-size: 50px;
   line-height: 1.1;
   margin-bottom: 8px;
+  text-align: center;
+
+  @media (max-width: 600px) {
+    font-size: 35px;
+  }
 `;
 
-export const Para = styled.p`
-  color: black;
-  font-size: 10px;
+export const Paragraph = styled.p`
+  font-size: 26px;
+  font-weight: normal;
+  line-height: normal;
+  padding-left: 55px;
+
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
 `;
 
 export const Section = styled.section`
   display: flex;
   height: 100vh;
   justify-content: space-between;
-`;
-
-export const Paragraph = styled.p`
-  color: black;
-  font-size: 60px;
 `;
 
 export const Figure = styled.figure`
@@ -80,6 +100,7 @@ export const ImageFit = styled.div`
 `;
 
 export const Image = styled.img`
+  padding: 30px;
   max-width: 100%;
   height: auto;
 `;
