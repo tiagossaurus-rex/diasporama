@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/diasporama/static/js/main.5b7c0116.chunk.js",
-    "main.js.map": "/diasporama/static/js/main.5b7c0116.chunk.js.map",
+    "main.js": "/diasporama/static/js/main.51533d6d.chunk.js",
+    "main.js.map": "/diasporama/static/js/main.51533d6d.chunk.js.map",
     "runtime-main.js": "/diasporama/static/js/runtime-main.d760bb5c.js",
     "runtime-main.js.map": "/diasporama/static/js/runtime-main.d760bb5c.js.map",
     "static/js/2.445cb696.chunk.js": "/diasporama/static/js/2.445cb696.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.d760bb5c.js",
     "static/js/2.445cb696.chunk.js",
-    "static/js/main.5b7c0116.chunk.js"
+    "static/js/main.51533d6d.chunk.js"
   ]
 }
