@@ -11,6 +11,7 @@ export function FlickerContainer() {
           key={diaporama.id}
           direction={diaporama.direction}
           color={diaporama.color}
+          border={diaporama.border}
         >
           <Flicker.Pane>
             <Flicker.Title>{diaporama.title}</Flicker.Title>

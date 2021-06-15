@@ -5,6 +5,7 @@
       "paragraph": "this is it",
       "direction": "row-reverse",
       "color": "#71BC8F",
+    
       
       "diapo": [
         {
@@ -33,6 +34,7 @@
       "paragraph": "that is at",
       "direction": "row",
       "color": "coral",
+      "border": "cyan solid 2px",
       "diapo": [
         {
           "text": "GGood",

@@ -20,6 +20,7 @@ export default function Flicker({
   children,
   color = "color",
   direction = "row",
+
   ...restProps
 }) {
   return (

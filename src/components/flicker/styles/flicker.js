@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Inner = styled.div`
-  border: 1px solid red;
   background-color: ${({ color }) => color};
   padding: 5%;
   display: flex;
