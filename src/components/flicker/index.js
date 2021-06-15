@@ -15,14 +15,10 @@ import {
   InnerTitle,
 } from "./styles/flicker";
 
-export default function Flicker({
-  children,
-  direction = "column",
-  ...restProps
-}) {
+export default function Flicker({ children, direction = "row", ...restProps }) {
   return (
     <Item {...restProps}>
-      <Inner {...restProps}>{children}</Inner>
+      <Inner direction={direction}>{children}</Inner>
     </Item>
   );
 }

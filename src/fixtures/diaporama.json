@@ -3,6 +3,8 @@
       "id": 1,
       "title": "oh, what a thrill",
       "paragraph": "this is it",
+      "direction": "row-reverse",
+      
       "diapo": [
         {
           "text": "Image1",
@@ -19,13 +21,16 @@
           "image": "/images/animimage3.jpg",
           "alt": "bla"
         }
+        
       ]
+      
     },
   
     {
       "id": 2,
       "title": "WWWWWWWWoooo ooHHH",
       "paragraph": "that is at",
+      "direction": "row",
       "diapo": [
         {
           "text": "GGood",
