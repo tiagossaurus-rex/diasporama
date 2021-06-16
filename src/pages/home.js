@@ -1,6 +1,6 @@
 import React from "react";
-import { FlickerContainer } from "../containers/flicker";
+import { FeatureContainer } from "../containers/feature";
 
 export default function Home() {
-  return <FlickerContainer />;
+  return <FeatureContainer />;
 }
