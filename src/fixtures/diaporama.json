@@ -32,9 +32,34 @@
       "id": 2,
       "title": "Woooo ooHHH",
       "paragraph": "that is at",
-      "direction": "row",
-      "color": "coral",
-      "border": "cyan solid 2px",
+      "direction": "column-reverse",
+      "color": "",
+    
+      "diapo": [
+        {
+          "text": "GGood",
+          "image": "/images/animinage1.jpg",
+          "alt": "bla"
+        },
+        {
+          "text": "Ohh00h000o!!",
+          "image": "/images/animimage2.jpg",
+          "alt": "bla"
+        },
+        {
+          "text": "Brill!",
+          "image": "/images/animimage3.jpg",
+          "alt": "bla"
+        }
+      ]
+    },
+
+    {
+      "id": 3,
+      "title": "tactile cactile",
+      "paragraph": "It is meant to be",
+      "direction": "row-reverse",
+      "color": "rgb(142, 13, 59)",
       "diapo": [
         {
           "text": "GGood",
@@ -53,5 +78,6 @@
         }
       ]
     }
+    
   ]
   

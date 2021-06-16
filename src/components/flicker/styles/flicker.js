@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const Inner = styled.div`
   background-color: ${({ color }) => color};
-  padding: 5%;
+  padding: 2%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: ${({ direction }) => direction};
   max-width: 1100px;
-  // margin: auto;
+  border-radius: 10px;
   width: 100%;
 
   @media (max-width: 1000px) {
@@ -93,7 +93,8 @@ export const Image = styled.img`
   max-width: 500px;
   max-height: 500px;
   @media (max-width: 500px) {
-    max-width: 90vw;
+    max-width: 80vw;
+    padding-top: 2px;
   }
 `;
 
