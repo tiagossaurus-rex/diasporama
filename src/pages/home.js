@@ -1,6 +1,6 @@
 import React from "react";
-import { FeatureContainer } from "../containers/feature";
+import FeatureContainer from "../containers/feature";
 
-export default function Home() {
+export function Home() {
   return <FeatureContainer />;
 }

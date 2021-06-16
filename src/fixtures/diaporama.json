@@ -32,8 +32,8 @@
       "id": 2,
       "title": "Woooo ooHHH",
       "paragraph": "that is at",
-      "direction": "column-reverse",
-      "color": "",
+      "direction": "row",
+      "color": "coral",
     
       "diapo": [
         {
