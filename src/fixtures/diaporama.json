@@ -15,7 +15,7 @@
         },
         {
           "text": "Image2",
-          "image": "/images/animimage2.jpg",
+          "image": "/images/animage2.jpg",
           "alt": "bla"
         },
         {
@@ -27,6 +27,8 @@
       ]
       
     },
+
+
   
     {
       "id": 2,
