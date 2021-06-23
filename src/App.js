@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/header";
 import Shuffle from "./components/shuffle";
-import { BrowserRouter as Router, Switch, useParams } from "react-router-dom";
+import { HashRouter as Router, Switch, useParams } from "react-router-dom";
 import { Route } from "react-router-dom";
 import { Home } from "./pages/home";
 
