@@ -3,7 +3,7 @@ import React from "react";
 import useSound from "use-sound";
 import click from "../sound/click.mp3";
 import { useState, useEffect, useRef } from "react";
-
+import View from "./view";
 export default function Flicker(props) {
   const [flip, setFlip] = useState(true);
   const [imageNumber, setImageNumber] = useState(0);
@@ -29,14 +29,16 @@ export default function Flicker(props) {
 
   // const boxClass = flip ? "boxFlickerBlack" : "boxFlickerClear";
   const diaporama = Images[imageNumber];
-  const textDisplay = flip ? "text" : "notext";
+  // const diaporama = Images[0];
+  const TextDisplay = flip ? View.Text : View.NoText;
   return (
     <>
       <section>
         <header>
           <h1>{props.title}</h1>
+          <p>{props.paragraph}</p>
         </header>
-        <figure
+        <View.Wrapper
           onMouseEnter={() => {
             setIsPlaying(true);
           }}
@@ -50,18 +52,21 @@ export default function Flicker(props) {
             setImageNumber(0);
           }}
         >
-          <div className={textDisplay}>
-            <h2>{diaporama.text}</h2>
-            <figcaption>
-              {imageNumber + 1} / {Images.length}
-            </figcaption>
-          </div>
           <img
-            className=" imageFit "
+            width="400px"
             alt={diaporama.alt}
             src={`/diasporama${diaporama.image}`}
           />
-        </figure>
+          <View.Figure>
+            <View.Text flip={flip}>
+              <View.TextDisplay>{diaporama.text}</View.TextDisplay>
+            </View.Text>
+            <p>{diaporama.paragraph}</p>
+            <figcaption>
+              {imageNumber + 1} / {Images.length}
+            </figcaption>
+          </View.Figure>
+        </View.Wrapper>
       </section>
     </>
   );
