@@ -7,8 +7,8 @@ import { Home } from "./pages/home";
 
 export function App() {
   // function Dumie() {
-  //   const { id } = useParams();
-  //   return <div>This my id:{id}</div>;
+  //   const { slug } = useParams();
+  //   return <div>This my slug:{slug}</div>;
   // }
   return (
     <Router>

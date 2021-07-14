@@ -33,11 +33,11 @@ export default function Flicker(props) {
   const TextDisplay = flip ? View.Text : View.NoText;
   return (
     <>
-      <section>
-        <header>
+      <View.Section>
+        <View.Header>
           <h1>{props.title}</h1>
           <p>{props.paragraph}</p>
-        </header>
+        </View.Header>
         <View.Wrapper
           onMouseEnter={() => {
             setIsPlaying(true);
@@ -52,22 +52,23 @@ export default function Flicker(props) {
             setImageNumber(0);
           }}
         >
-          <img
-            width="400px"
-            alt={diaporama.alt}
-            src={`/diasporama${diaporama.image}`}
-          />
           <View.Figure>
+            <View.Image
+              alt={diaporama.alt}
+              src={`/diasporama${diaporama.image}`}
+            />
+
             <View.Text flip={flip}>
-              <View.TextDisplay>{diaporama.text}</View.TextDisplay>
+              <View.H2>{diaporama.text}</View.H2>
+
+              <View.Figcaption>
+                {imageNumber + 1} / {Images.length}
+              </View.Figcaption>
             </View.Text>
             <p>{diaporama.paragraph}</p>
-            <figcaption>
-              {imageNumber + 1} / {Images.length}
-            </figcaption>
           </View.Figure>
         </View.Wrapper>
-      </section>
+      </View.Section>
     </>
   );
 }

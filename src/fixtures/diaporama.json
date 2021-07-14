@@ -1,6 +1,7 @@
 [
     {
       "id": 1,
+      "slug": "my-project",
       "title": "oh, what a thrill",
       "paragraph": "this is it",
       "direction": "row-reverse",
@@ -32,6 +33,7 @@
   
     {
       "id": 2,
+      "slug": "my-second-project",
       "title": "Woooo ooHHH",
       "paragraph": "that is at",
       "direction": "row",
@@ -50,7 +52,7 @@
         },
         {
           "text": "Brill!",
-          "image": "/images/animage3.jpg",
+          "image": "/images/animimage3.jpg",
           "alt": "bla"
         }
       ]
@@ -58,13 +60,14 @@
 
     {
       "id": 3,
+      "slug": "my-third-project",
       "title": "tactile cactile",
       "paragraph": "It is meant to be",
       "direction": "row-reverse",
       "color": "rgb(142, 13, 59)",
       "diapo": [
         {
-          "text": "GGood",
+          "text": "Proper Rad",
           "image": "/images/animinage1.jpg",
           "alt": "bla"
         },
@@ -75,11 +78,13 @@
         },
         {
           "text": "Brill!",
-          "image": "/images/animage3.jpg",
+          "image": "/images/animimage3.jpg",
           "alt": "bla"
         }
       ]
     }
+
+ 
     
   ]
   

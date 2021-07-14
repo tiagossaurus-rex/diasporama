@@ -14,6 +14,7 @@ export default function Shuffle() {
   //   </div>
   // ));
   const { id } = useParams();
+  console.log(id);
   const diaporama = diaporamaData.find(
     (diaporama) => diaporama.id === Number(id)
   );

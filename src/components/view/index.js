@@ -1,5 +1,16 @@
 import React from "react";
-import { Wrapper, Figure, Text, TextDisplay } from "./styles/view";
+import {
+  Wrapper,
+  Figure,
+  Text,
+  TextDisplay,
+  Section,
+  Header,
+  Image,
+  //   ImageFit,
+  Figcaption,
+  H2,
+} from "./styles/view";
 
 export default function View({
   children,
@@ -27,6 +38,24 @@ View.TextDisplay = function ViewTexrDisplay({ children, ...restProps }) {
   return <TextDisplay {...restProps}>{children}</TextDisplay>;
 };
 
-// View.NoText = function ViewNoText({ children, ...restProps }) {
-//   return <NoText {...restProps}>{children}</NoText>;
+View.Section = function ViewSection({ children, ...restProps }) {
+  return <Section {...restProps}>{children}</Section>;
+};
+View.Header = function ViewHeader({ children, ...restProps }) {
+  return <Header {...restProps}>{children}</Header>;
+};
+// View.ImageFit = function ViewImageFit({ children, ...restProps }) {
+//   return <ImageFit {...restProps}>{children}</ImageFit>;
 // };
+
+View.Image = function ViewImage({ ...restProps }) {
+  return <Image {...restProps} />;
+};
+
+View.Figcaption = function ViewFigcaption({ children, ...restProps }) {
+  return <Figcaption {...restProps}>{children}</Figcaption>;
+};
+
+View.H2 = function ViewH2({ children, ...restProps }) {
+  return <H2 {...restProps}>{children}</H2>;
+};

@@ -22,7 +22,7 @@ function Header() {
           <Link to="/">Home</Link>
         </li>
         {DiaporamaData.map((diaporama) => (
-          <li key={diaporama.id}>
+          <li key={diaporama.title}>
             <Link to={`/${diaporama.id}`}>{diaporama.title}</Link>
           </li>
         ))}
