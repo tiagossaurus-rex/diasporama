@@ -19,7 +19,7 @@ export function App() {
         <Route path="/Projects">
           <p>I will be the projects page </p>
         </Route>
-        <Route path="/:id">
+        <Route path="/:slug">
           <Header />
           <Shuffle />
         </Route>

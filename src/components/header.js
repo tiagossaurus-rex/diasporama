@@ -23,7 +23,7 @@ function Header() {
         </li>
         {DiaporamaData.map((diaporama) => (
           <li key={diaporama.title}>
-            <Link to={`/${diaporama.id}`}>{diaporama.title}</Link>
+            <Link to={`/${diaporama.slug}`}>{diaporama.title}</Link>
           </li>
         ))}
       </ul>

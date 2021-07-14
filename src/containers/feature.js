@@ -18,7 +18,7 @@ export default function FeatureContainer() {
             <Feature.Paragraph>{diaporama.paragraph}</Feature.Paragraph>
           </Feature.Pane>
           <Feature.Pane>
-            <Link to={`/${diaporama.id}`} key={diaporama.id}>
+            <Link to={`/${diaporama.slug}`} key={diaporama.id}>
               <Feature.Image
                 src={process.env.PUBLIC_URL + diaporama.diapo[0].image}
                 alt={diaporama.diapo[0].alt}

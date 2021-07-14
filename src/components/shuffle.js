@@ -13,10 +13,10 @@ export default function Shuffle() {
   //     />
   //   </div>
   // ));
-  const { id } = useParams();
-  console.log(id);
+  const { slug } = useParams();
+
   const diaporama = diaporamaData.find(
-    (diaporama) => diaporama.id === Number(id)
+    (diaporama) => diaporama.slug == Number(slug)
   );
   if (!diaporama) {
     return <h2>This page doesn't exist</h2>;
