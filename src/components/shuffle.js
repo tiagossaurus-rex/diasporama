@@ -4,20 +4,9 @@ import { useParams } from "react-router-dom";
 import Flicker from "./flicker";
 
 export default function Shuffle() {
-  // return diaporamaData.map((diaporama) => (
-  //   <div key={diaporama.id}>
-  //     <Flicker
-  //       diaporama={diaporama.diapo}
-  //       title={diaporama.title}
-  //       paragraph={diaporama.paragraph}
-  //     />
-  //   </div>
-  // ));
   const { slug } = useParams();
 
-  const diaporama = diaporamaData.find(
-    (diaporama) => diaporama.slug == Number(slug)
-  );
+  const diaporama = diaporamaData.find((diaporama) => diaporama.slug === slug);
   if (!diaporama) {
     return <h2>This page doesn't exist</h2>;
   }
@@ -29,3 +18,17 @@ export default function Shuffle() {
     />
   );
 }
+
+// export default function Shuffle() {
+//   const { slug } = useParams();
+//   const diaporama = diaporamaData.find((d) => d.slug === slug);
+//   return diaporama ? (
+//     <Flicker
+//       diaporama={diaporama.diapo}
+//       title={diaporama.title}
+//       paragraph={diaporama.paragraph}
+//     />
+//   ) : (
+//     <h2>This page doesn't exist</h2>
+//   );
+// }
