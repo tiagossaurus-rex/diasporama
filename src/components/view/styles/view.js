@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div``;
+export const Wrapper = styled.div`
+  background: #fff;
+  margin: 0;
+  position: relative;
+  width: 50vw;
+`;
 
 export const Figure = styled.figure`
   margin: 0;
@@ -47,7 +52,10 @@ export const Section = styled.section`
   justify-content: space-between;
 `;
 
-export const Header = styled.header``;
+export const Header = styled.header`
+  width: 50vw;
+  height: 50vh;
+`;
 
 export const Figcaption = styled.figcaption`
   color: red;

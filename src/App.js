@@ -17,10 +17,10 @@ export function App() {
           <p>I will be the contact page</p>
         </Route>
         <Route path="/Projects">
+          <Header />
           <p>I will be the projects page </p>
         </Route>
         <Route path="/:slug">
-          <Header />
           <Shuffle />
         </Route>
         <Route path="/About">

@@ -3,6 +3,7 @@ import React from "react";
 import useSound from "use-sound";
 import click from "../sound/click.mp3";
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import View from "./view";
 export default function Flicker(props) {
   const [flip, setFlip] = useState(true);
@@ -37,6 +38,10 @@ export default function Flicker(props) {
         <View.Header>
           <h1>{props.title}</h1>
           <p>{props.paragraph}</p>
+
+          <ul>
+            <Link to="/">+</Link>
+          </ul>
         </View.Header>
         <View.Wrapper
           onMouseEnter={() => {
@@ -52,21 +57,19 @@ export default function Flicker(props) {
             setImageNumber(0);
           }}
         >
-          <View.Figure>
-            <View.Image
-              alt={diaporama.alt}
-              src={`/diasporama${diaporama.image}`}
-            />
+          <View.Image
+            alt={diaporama.alt}
+            src={`/diasporama${diaporama.image}`}
+          />
 
-            <View.Text flip={flip}>
-              <View.H2>{diaporama.text}</View.H2>
+          <View.Text flip={flip}>
+            <View.H2>{diaporama.text}</View.H2>
 
-              <View.Figcaption>
-                {imageNumber + 1} / {Images.length}
-              </View.Figcaption>
-            </View.Text>
-            <p>{diaporama.paragraph}</p>
-          </View.Figure>
+            <View.Figcaption>
+              {imageNumber + 1} / {Images.length}
+            </View.Figcaption>
+          </View.Text>
+          <p>{diaporama.paragraph}</p>
         </View.Wrapper>
       </View.Section>
     </>

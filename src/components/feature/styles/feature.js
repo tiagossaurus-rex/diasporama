@@ -92,6 +92,7 @@ export const ImageFit = styled.div`
 export const Image = styled.img`
   max-width: 500px;
   max-height: 500px;
+  object-fit: cover;
   @media (max-width: 500px) {
     max-width: 80vw;
     padding-top: 2px;
