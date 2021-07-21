@@ -1,10 +1,10 @@
 import React from "react";
 import {
+  Section,
   Wrapper,
   Figure,
   Text,
   TextDisplay,
-  Section,
   Header,
   Image,
   //   ImageFit,
@@ -21,7 +21,9 @@ export default function View({
 }) {
   return <Wrapper></Wrapper>;
 }
-
+View.Section = function ViewSection({ children, ...restProps }) {
+  return <Section {...restProps}>{children}</Section>;
+};
 View.Wrapper = function ViewWrapper({ children, ...restProps }) {
   return <Wrapper {...restProps}>{children}</Wrapper>;
 };
@@ -38,9 +40,6 @@ View.TextDisplay = function ViewTexrDisplay({ children, ...restProps }) {
   return <TextDisplay {...restProps}>{children}</TextDisplay>;
 };
 
-View.Section = function ViewSection({ children, ...restProps }) {
-  return <Section {...restProps}>{children}</Section>;
-};
 View.Header = function ViewHeader({ children, ...restProps }) {
   return <Header {...restProps}>{children}</Header>;
 };

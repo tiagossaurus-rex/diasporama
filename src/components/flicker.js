@@ -40,7 +40,7 @@ export default function Flicker(props) {
           <p>{props.paragraph}</p>
 
           <ul>
-            <Link to="/">+</Link>
+            <Link to="/">Home</Link>
           </ul>
         </View.Header>
         <View.Wrapper

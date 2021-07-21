@@ -15,7 +15,7 @@ url("//db.onlinewebfonts.com/t/d18acb2db67fb3aae1ccd198d37a10e9.woff") format("w
         font-family: "Josefin Sans", sans-serif;
         text-rendering: optimizeLegibility;
         -moz-osx-font-smoothing: grayscale;
-        background: rgba(237, 249, 161, 1);
+        background: #eae2d2;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         color: #6ddfa8;

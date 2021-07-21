@@ -1,16 +1,34 @@
 import styled from "styled-components";
 
+export const Section = styled.section`
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+
+  @media (max-width: 900px) {
+    flex-direction: column-reverse;
+  }
+`;
+
 export const Wrapper = styled.div`
   background: #fff;
   margin: 0;
   position: relative;
   width: 50vw;
+  @media (max-width: 900px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const Figure = styled.figure`
   margin: 0;
   position: relative;
   width: 50vw;
+  @media (max-width: 900px) {
+    flex-grow: 1;
+    width: 100vw;
+  }
 `;
 export const Text = styled.div`
   display: flex;
@@ -25,6 +43,9 @@ export const Text = styled.div`
   color: white;
   z-index: 1;
   visibility: ${(props) => (props.flip ? "visible" : "hidden")};
+  @media (max-width: 900px) {
+    width: 100vw;
+  }
 `;
 
 export const TextDisplay = styled.h2`
@@ -37,6 +58,9 @@ export const Image = styled.img`
   position: fixed;
   object-fit: cover;
   width: 50%;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 // export const ImageFit = styled.div`
@@ -45,12 +69,6 @@ export const Image = styled.img`
 //   position: fixed;
 //   width: 50%;
 // `;
-
-export const Section = styled.section`
-  display: flex;
-  height: 100vh;
-  justify-content: space-between;
-`;
 
 export const Header = styled.header`
   width: 50vw;
@@ -69,3 +87,19 @@ export const H2 = styled.h2`
   text-decoration: underline overline;
   font-family: "YoungSerif", sans-serif;
 `;
+
+//     figcaption {
+//       font-size: 30px;
+//       right: 140px;
+//     }
+//     img {
+//       width: 100%;
+//     }
+//     h2 {
+//       font-size: 20px;
+//       position: relative;
+//     }
+//     h1 {
+//       font-size: 80px;
+//     }
+//   }
