@@ -8,7 +8,8 @@
       "color": "#71BC8F",
     
       
-      "diapo": [
+      "diapo": 
+      [
         {
           "text": "Image1",
           "image": "/images/animinage1.jpg",
@@ -68,7 +69,7 @@
       "color": "rgb(142, 13, 59)",
       "diapo": [
         {
-          "text": "Proper Rad",
+          "text": "Cannes Festival",
           "image": "/images/animinage1.jpg",
           "alt": "bla"
         },
@@ -78,7 +79,7 @@
           "alt": "bla"
         },
         {
-          "text": "Brill!",
+          "text": "",
           "image": "/images/animimage3.jpg",
           "alt": "bla"
         }
