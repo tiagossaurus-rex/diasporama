@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 export function About() {
-  const [reviews] = useState([]);
+  const [reviews, setReviews] = useState([]);
 
   const fetchReviews = async () => {
     // const { data } = await Axios.get(
@@ -10,6 +10,12 @@ export function About() {
     // const reviews = data;
     // setReviews(reviews);
     // console.log(reviews);
+    const { data } = await fetch(
+      "/.netlify/functions/getReviews"
+    ).then((response) => response.json());
+
+    setReviews(data);
+    console.log(data);
   };
 
   useEffect(() => {
@@ -19,7 +25,10 @@ export function About() {
   return (
     <div>
       {reviews.map((review) => (
-        <p key={review.id}>{review.title}</p>
+        <p key={review.id}>
+          {review.text}
+          {review.rating}
+        </p>
       ))}
       blallalallalala
     </div>
