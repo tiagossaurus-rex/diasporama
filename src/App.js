@@ -1,9 +1,10 @@
 import React from "react";
 import Header from "./components/header";
 import Shuffle from "./components/shuffle";
-import { HashRouter as Router, Switch, useParams } from "react-router-dom";
+import { HashRouter as Router, Switch } from "react-router-dom";
 import { Route } from "react-router-dom";
 import { Home } from "./pages/home";
+import { About } from "./pages/about";
 
 export function App() {
   // function Dumie() {
@@ -19,11 +20,12 @@ export function App() {
         <Route path="/Projects">
           <p>I will be the projects page </p>
         </Route>
+        <Route path="/About">
+          <About />
+          <p>I will be the about page </p>
+        </Route>
         <Route path="/:slug">
           <Shuffle />
-        </Route>
-        <Route path="/About">
-          <p>I will be the About page</p>
         </Route>
         <Route path="/">
           <Home />

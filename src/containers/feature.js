@@ -1,7 +1,7 @@
 import React from "react";
 import featureData from "../fixtures/diaporama.json";
 import { Link } from "react-router-dom";
-import Feature, { Container } from "../components/feature";
+import Feature from "../components/feature";
 // import Photo from "../images/animinage1.jpg";
 
 export default function FeatureContainer() {

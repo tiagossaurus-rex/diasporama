@@ -31,7 +31,7 @@ export default function Flicker(props) {
   // const boxClass = flip ? "boxFlickerBlack" : "boxFlickerClear";
   const diaporama = Images[imageNumber];
   // const diaporama = Images[0];
-  const TextDisplay = flip ? View.Text : View.NoText;
+  // const TextDisplay = flip ? View.Text : View.NoText;
   return (
     <>
       <View.Section>
