@@ -28,6 +28,7 @@ export function About() {
         <p key={review.id}>
           {review.text}
           {review.rating}
+          {review.image}
         </p>
       ))}
       blallalallalala

@@ -59,7 +59,8 @@ export default function Flicker(props) {
         >
           <View.Image
             alt={diaporama.alt}
-            src={`/diasporama${diaporama.image}`}
+            // src={`/diasporama${diaporama.image}`}
+            src={process.env.PUBLIC_URL + `${diaporama.image}`}
           />
 
           <View.Text flip={flip}>
