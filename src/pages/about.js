@@ -6,19 +6,21 @@ export function About() {
   const [reviews, setReviews] = useState([]);
 
   const fetchReviews = async () => {
+    // const { data } = await Axios.get(
+    //   "https://www.trustedhousesitters.com/house-and-pet-sitters/united-kingdom/england/london/l/1687461/",
+    //   {
+    //     responseType: "document",
+    //   }
+    // );
+
     const { data } = await Axios.get(
-      "https://www.trustedhousesitters.com/house-and-pet-sitters/united-kingdom/england/london/l/1687461/",
+      "https://affectionate-khorana-fac900.netlify.app/",
       {
-        responseType: "document",
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+        },
       }
     );
-
-    // const reviews = data;
-    // setReviews(reviews);
-    // console.log(reviews);
-    // const { data } = await fetch(
-    // ("/.netlify/functions/getReviews");
-    // ).then((response) => response.json());
 
     setReviews(data);
     console.log(data);
@@ -28,9 +30,6 @@ export function About() {
     fetchReviews();
   }, []);
 
-  // const reviewFetch = await response.reviewFetch();
-  // const $ = cheerio.load(reviewFetch);
-  // return $("#feedback-review-list > div").reviewFetch();
   return (
     <div>
       {reviews.map((review) => (
