@@ -13,6 +13,7 @@ exports.handler = async (event, context) => {
     const reviews = $("#feedback-review-list p")
       .map((i, review) => $(review).text())
       .toArray();
+
     return { statusCode: 200, reviews };
   } catch (error) {
     console.log(error);

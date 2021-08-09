@@ -13,14 +13,9 @@ export function About() {
     //   }
     // );
 
-    const { data } = await Axios.get(
-      "https://affectionate-khorana-fac900.netlify.app/",
-      {
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-        },
-      }
-    );
+    const { data } = await fetch(
+      "/.netlify/functions/getReviews"
+    ).then((response) => response.json());
 
     setReviews(data);
     console.log(data);
@@ -32,14 +27,15 @@ export function About() {
 
   return (
     <div>
-      {reviews.map((review) => (
+      {/* {reviews.map((review) => (
         <p key={review.id}>
           {review.text}
           {review.rating}
           <img src={review.image} />
         </p>
       ))}
-      blallalallalala
+      blallalallalala */}
+      {`${reviews.text}`}
     </div>
   );
 
