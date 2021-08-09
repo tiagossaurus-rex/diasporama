@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Axios from "axios";
-import Cheerio from "cheerio";
 
 export function About() {
   const [reviews, setReviews] = useState([]);
