@@ -10,7 +10,7 @@ exports.handler = async (event, context) => {
     const body = await response.data;
 
     const $ = cheerio.load(body);
-    const reviews = $("#feedback-review-list p")
+    const reviews = $("#feedback-review-li p ")
       .map((i, review) => $(review).text())
       .toArray();
 
