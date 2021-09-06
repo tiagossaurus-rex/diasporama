@@ -3,43 +3,48 @@ import React, { useState, useEffect } from "react";
 export function About() {
   const [reviews, setReviews] = useState([]);
 
-  const fetchReviews = async () => {
-    // const { data } = await Axios.get(
-    //   "https://www.trustedhousesitters.com/house-and-pet-sitters/united-kingdom/england/london/l/1687461/",
-    //   {
-    //     responseType: "document",
-    //   }
-    // );
-
-    const { data } = await fetch(
-      "/.netlify/functions/getReviews"
-    ).then((response) => response.json());
-
-    setReviews(data);
-    console.log(data);
-  };
-
   useEffect(() => {
-    fetchReviews();
+    const fetchData = async () => {
+      const response = await fetch(
+        "http://localhost:8888/.netlify/functions/getReviews"
+      );
+      const reviews = await response.json();
+
+      setReviews(reviews.filter(Boolean));
+    };
+
+    fetchData();
   }, []);
 
   return (
     <div>
-      {/* {reviews.map((review) => (
-        <p key={review.id}>
-          {review.text}
-          {review.rating}
-          <img src={review.image} />
-        </p>
+      {reviews.map((review, index) => (
+        <>
+          <p key={index}>{review.description}</p>
+          {/* {Array.from(Array(5)).fill("")} */}
+          {Array.from(Array(5))
+            .fill("")
+            .map((i) => {
+              <div
+                style={{
+                  backgroundImage: `url('./MYBOX/_${i}.jpg')`,
+                }}
+              ></div>;
+            })}
+        </>
       ))}
-      blallalallalala */}
-      {`${reviews.text}`}
     </div>
   );
 
-  //   let review = document.querySelector("#feedback-review-list > div").innerText;
-
-  //   return {
-  //     review,
-  //   };
+  //make an array of 5 empty objects. map an array of five elements
 }
+
+// const displayReviews = Object.values(reviews).map((data) => {
+//   return (
+//     <div>
+//       <p>{review.description}</p>
+//     </div>
+//   );
+// });
+// return <>{displayReviews} </>;
+// }
