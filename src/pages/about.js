@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Reviews from "../components/reviews/reviews.js";
 
 export function About() {
   const [reviews, setReviews] = useState([]);
@@ -10,7 +11,8 @@ export function About() {
       );
       const reviews = await response.json();
 
-      setReviews(reviews.filter(Boolean));
+      setReviews(reviews);
+      // setReviews(reviews.filter(Boolean));
     };
 
     fetchData();
@@ -19,24 +21,14 @@ export function About() {
   return (
     <div>
       {reviews.map((review, index) => (
-        <>
+        <div>
           <p key={index}>{review.description}</p>
-          {/* {Array.from(Array(5)).fill("")} */}
-          {Array.from(Array(5))
-            .fill("")
-            .map((i) => {
-              <div
-                style={{
-                  backgroundImage: `url('./MYBOX/_${i}.jpg')`,
-                }}
-              ></div>;
-            })}
-        </>
+
+          <Reviews review={review} />
+        </div>
       ))}
     </div>
   );
-
-  //make an array of 5 empty objects. map an array of five elements
 }
 
 // const displayReviews = Object.values(reviews).map((data) => {
@@ -47,4 +39,13 @@ export function About() {
 //   );
 // });
 // return <>{displayReviews} </>;
+// }
+// const fields: JSX.Element[] = [];
+// for (let i = 1; i <= committedFieldsToAdd; i++) {
+//   fields.push(<img
+//     src="./icons/star.png"
+//     alt="star"
+//     width="150"
+//     height="150"
+//   />);
 // }

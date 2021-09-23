@@ -22,7 +22,6 @@ export function App() {
         </Route>
         <Route path="/About">
           <About />
-          <p>I will be the about page </p>
         </Route>
         <Route path="/:slug">
           <Shuffle />

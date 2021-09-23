@@ -16,18 +16,24 @@ exports.handler = async (event, context) => {
       .slice(0, scriptText.search("window.__INITIAL_I18N_STORE__"))
       .trim()
       .replace("window.__INITIAL_STATE__ =", "");
-    const scriptTextTrimmed = scriptTextTrimStart
+    var scriptTextTrimmed = scriptTextTrimStart
       .substring(0, scriptTextTrimStart.length - 1)
       .trim()
-      .replace(/undefined/g, "null");
-
+      .replace(/undefined/g, "null")
+      .replace(/(\b)cat(\b)/g, "raccoon")
+      .replace(/(\b)cats(\b)/g, "raccoons")
+      .replace(/(\b)house(\b)/g, "den");
+    // scriptTextTrimmed = scriptTextTrimmed.replace("null,", "").replace(",", "");
     const parsedJSON = JSON.parse(scriptTextTrimmed);
     //console.log(parsedJSON.search.profile["1687461"]);
     const parsedReviews = parsedJSON.search.profile["1687461"].pastAssignments;
 
-    const findaReview = parsedReviews
+    var findaReview = parsedReviews
       .filter((element, index) => typeof element.review === "object")
       .map((review) => review.review);
+    findaReview = findaReview
+      .filter((element, index) => element !== null)
+      .map((review) => review);
     console.log(findaReview);
 
     return { statusCode: 200, body: JSON.stringify(findaReview) };
