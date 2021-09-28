@@ -6,12 +6,16 @@ class Reviews extends React.Component {
     return (
       <div>
         <li>
-          <span>Organised</span>
+          <span>Talented</span>
           <Stars value={this.props.review.organised} />
         </li>
         <li>
-          <span>Amazing</span>
+          <span>Intutive</span>
           <Stars value={this.props.review.reliable} />
+        </li>
+        <li>
+          <span>Ingenuous</span>
+          <Stars value={this.props.review.tidy} />
         </li>
 
         {/* <span>Reliable</span><Stars value={this.props.review.reliable /> */}
