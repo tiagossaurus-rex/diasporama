@@ -9,7 +9,9 @@ class Stars extends React.Component {
           element,
           index
         ) {
-          return <img src={star} alt="star" width="15" height="15" />;
+          return (
+            <img key={index} src={star} alt="star" width="15" height="15" />
+          );
         })}
       </div>
     );

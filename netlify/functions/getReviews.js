@@ -5,6 +5,7 @@ const API_ENDPOINT =
   "https://www.trustedhousesitters.com/house-and-pet-sitters/united-kingdom/england/london/l/1687461/";
 async function fetchPage(url) {
   const response = await axios(url, { responseType: "document" });
+  console.log(response);
   return response.data;
 }
 
@@ -40,16 +41,30 @@ exports.handler = async (event, context) => {
       .replace(/(\b)house(\b)/g, "den");
 
     const parsedJSON = JSON.parse(scriptTextTrimmed);
-    const parsedReviews = parsedJSON.search.profile["1687461"].pastAssignments;
-    //get value of Assignment statement  line 35
-    let findaReview = parsedReviews
-      .filter((element, index) => typeof element.review === "object")
-      .map((review) => review.review)
-      .filter((element, index) => element !== null)
-      .map((review) => review);
-    console.log(findaReview);
 
-    return { statusCode: 200, body: JSON.stringify(findaReview) };
+    const parsedAssignements =
+      parsedJSON.search.profile["1687461"].pastAssignments;
+    //get value of Assignment statement  line 35
+
+    let reviews = parsedAssignements
+      .filter(
+        (element, index) =>
+          element !== null &&
+          element.review !== null &&
+          element.review.description !== undefined
+      )
+
+      .map((assignement) => {
+        return [
+          assignement.review,
+          assignement.ownerName,
+          assignement.ownerAvatarPhoto,
+        ];
+      });
+
+    // .map((assignement) => review);
+
+    return { statusCode: 200, body: JSON.stringify(reviews) };
   } catch (error) {
     console.log(error);
     return {

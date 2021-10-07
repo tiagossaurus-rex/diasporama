@@ -18,6 +18,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "debug": "netlify dev --inspect",
     "dev": "netlify dev",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
