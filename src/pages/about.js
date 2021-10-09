@@ -6,9 +6,7 @@ export function About() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(
-        "http://localhost:8888/.netlify/functions/getReviews/"
-      );
+      const response = await fetch("/.netlify/functions/getReviews/");
       console.log(response);
       const reviews = await response.json();
 
