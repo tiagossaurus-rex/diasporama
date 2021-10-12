@@ -7,11 +7,11 @@ export function About() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(
-        "http://localhost:8888/.netlify/functions/getReviews/"
-      ).catch(function (err) {
-        console.log("error in retrieving the API response", err);
-      });
+      const response = await fetch("/.netlify/functions/getReviews/").catch(
+        function (err) {
+          console.log("error in retrieving the API response", err);
+        }
+      );
       const reviews = await response.json();
 
       setReviews(reviews);

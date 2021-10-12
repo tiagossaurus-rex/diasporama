@@ -10,7 +10,7 @@ class Ratings extends React.Component {
           <Stars value={this.props.review.organised} />
         </li>
         <li>
-          <span>Intutive</span>
+          <span>Intuitive</span>
           <Stars value={this.props.review.reliable} />
         </li>
         <li>
