@@ -1,7 +1,7 @@
 import React from "react";
 import Stars from "../stars/stars.js";
 
-class Reviews extends React.Component {
+class Ratings extends React.Component {
   render() {
     return (
       <div>
@@ -24,4 +24,4 @@ class Reviews extends React.Component {
   }
 }
 
-export default Reviews;
+export default Ratings;
