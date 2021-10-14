@@ -19,21 +19,22 @@ export default function ReviewList() {
     fetchData();
   }, []);
   const reviewsList = reviews.map((review, index) => {
-    // return <div>Gupppppp</div>;
+    console.log(review);
     const stringId =
       "https://res.cloudinary.com/trustedhousesitters/image/upload/t_square_small,f_auto/v1/remote_media/media/photo";
-    const fullString = stringId.concat(review[2].publicId.slice(24));
-    // //  console.log(fullString);
-    const ownerName = review[1];
-    const textDescription = review[0].description;
-    const ratings = review[0];
+    const fullString = stringId.concat(review.photo.publicId.slice(24));
+
     return (
       <ReviewItem
         key={index}
-        ownerName={ownerName}
-        textDescription={textDescription}
-        review={ratings}
+        ownerName={review.ownerName}
+        textDescription={review.description}
+        review={review.review}
+        location={review.location}
+        country={review.country}
         fullString={fullString}
+        startDate={review.startDate}
+        endDate={review.endDate}
       />
     );
   });

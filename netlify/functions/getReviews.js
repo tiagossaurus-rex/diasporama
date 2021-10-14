@@ -55,11 +55,17 @@ exports.handler = async (event, context) => {
       )
 
       .map((assignement) => {
-        return [
-          assignement.review,
-          assignement.ownerName,
-          assignement.ownerAvatarPhoto,
-        ];
+        return {
+          review: assignement.review,
+          description: assignement.review.description,
+          ownerName: assignement.ownerName,
+          photo: assignement.ownerAvatarPhoto,
+          location: assignement.listingLocation.name,
+          country: assignement.listingLocation.countryName,
+          startDate: assignement.startDate,
+          endDate: assignement.endDate,
+          //assignement.admin1Name
+        };
       });
 
     // .map((assignement) => review);
