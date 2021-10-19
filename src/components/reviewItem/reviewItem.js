@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Ratings from "../ratings/ratings.js";
+import Accordion from "../../components/accordion";
+import "./reviewItems.css";
 
 export default function ReviewItem({
   ownerName,
@@ -12,27 +14,54 @@ export default function ReviewItem({
   startDate,
   endDate,
 }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const isTextLong = textDescription.length > 138;
+  const isDivOpen = !isTextLong || isOpen;
+  const firstHalfText = textDescription.slice(0, 138);
+  const secondHalfText = textDescription.slice(138);
   return (
-    <div key={index}>
-      <h3>{ownerName}</h3>
-      <img src={fullString} alt={ownerName} title={ownerName} />
-      <p>{textDescription}</p>
-      <Ratings review={review} />
-      <p>
-        {location}, {country} .{" "}
-        {new Date(startDate).toLocaleDateString("en-en", {
-          year: "numeric",
-          month: "short",
-          day: "numeric",
-        })}{" "}
-        -
-        {new Date(endDate).toLocaleDateString("en-en", {
-          year: "numeric",
-          month: "short",
-          day: "numeric",
-        })}
-      </p>
-      <p></p>
-    </div>
+    <Accordion>
+      <div key={index}>
+        <header>
+          <Accordion.Title>{ownerName}</Accordion.Title>
+          <img
+            class="imageReview"
+            src={fullString}
+            alt={ownerName}
+            title={ownerName}
+          />
+        </header>
+        <div class="wrapper">
+          <div class={isDivOpen ? "reviewItemOpen" : "reviewItemClose"}>
+            <span class="reviewParagraph">{firstHalfText}</span>
+            {/* <span class="reviewParagrah">{isOpen && secondHalfText}</span> */}
+            {isOpen && <span>{secondHalfText}</span>}
+
+            <Ratings review={review} />
+          </div>
+
+          {isTextLong && (
+            <button class="reviewButton" onClick={() => setIsOpen(!isOpen)}>
+              {isOpen ? "Read Less" : "Read More"}
+            </button>
+          )}
+
+          <span>
+            {location}, {country} .{" "}
+            {new Date(startDate).toLocaleDateString("en-en", {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            })}{" "}
+            -
+            {new Date(endDate).toLocaleDateString("en-en", {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            })}
+          </span>
+        </div>
+      </div>
+    </Accordion>
   );
 }

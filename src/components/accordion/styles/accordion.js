@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   display: flex;
-  border-bottom: 1px dashed coral;
 `;
 
 export const Frame = styled.div`
@@ -12,7 +11,7 @@ export const Frame = styled.div`
 
 export const Inner = styled.div`
   display: flex;
-  padding: 70px 45px;
+  padding: 35px 22px;
   flex-direction: column;
   max-width: 815px;
   margin: auto;

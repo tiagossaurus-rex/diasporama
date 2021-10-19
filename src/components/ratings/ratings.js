@@ -5,7 +5,7 @@ class Ratings extends React.Component {
   render() {
     return (
       <div>
-        <ol>
+        <ul>
           <li>
             <span>Talented</span>
             <Stars value={this.props.review.organised} />
@@ -18,7 +18,7 @@ class Ratings extends React.Component {
             <span>Ingenuous</span>
             <Stars value={this.props.review.tidy} />
           </li>
-        </ol>
+        </ul>
 
         {/* <span>Reliable</span><Stars value={this.props.review.reliable /> */}
       </div>

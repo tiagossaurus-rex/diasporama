@@ -1,0 +1,42 @@
+.reviewItem {
+
+    /* &__textBox {
+
+    } */
+
+}
+
+.reviewItemClose {
+    color: coral;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}   
+
+.reviewItemOpen {
+    color: teal;
+    
+} 
+
+.reviewParagrah {
+    white-space: initial;  
+   
+}
+
+.reviewButton {
+    border: none;
+    text-decoration: underline;
+    background: transparent;
+    color: teal;
+}
+.imageReview {
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+}
+.wrapper {
+    width: 800px;
+    
+}
+

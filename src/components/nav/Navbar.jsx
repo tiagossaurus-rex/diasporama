@@ -61,8 +61,9 @@ export default function Navbar(){
     
     <Nav shrink={shrink} shrinkNav={shrinkNav}>
       <div className="logo" id="logoShrink">
-        Diasporamas
-        <P> by Hélène Martin</P>
+      <P> Hélène Martin is</P>
+        Racoonteuse
+        
       </div>
       {/* <Header /> */}
     </Nav>
