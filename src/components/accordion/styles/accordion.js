@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   display: flex;
+  border-bottom: 1px solid black;
 `;
 
 export const Frame = styled.div`

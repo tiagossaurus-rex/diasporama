@@ -7,11 +7,13 @@
 }
 
 .reviewItemClose {
+    max-height: 40px;
     color: coral;
-    height: 30px;
     overflow: hidden;
-    white-space: nowrap;
     text-overflow: ellipsis;
+    display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; 
 }   
 
 .reviewItemOpen {
@@ -19,17 +21,19 @@
     
 } 
 
-.reviewParagrah {
+/* .reviewParagrah {
     white-space: initial;  
    
-}
+} */
 
 .reviewButton {
+    position:relative;
     border: none;
     text-decoration: underline;
     background: transparent;
     color: teal;
 }
+
 .imageReview {
     width: 64px;
     height: 64px;
@@ -38,5 +42,8 @@
 .wrapper {
     width: 800px;
     
+}
+.reviewDates {
+
 }
 
