@@ -6,6 +6,8 @@
       "paragraph": "this is it",
       "direction": "row-reverse",
       "color": "#71BC8F",
+      "slugImage": "/images/animage2.jpg",
+      "slugAlt":"chapeau",
     
       
       "diapo": 
@@ -35,10 +37,12 @@
     {
       "id": 2,
       "slug": "my-second-project",
-      "title": "Woooo ooHHH",
+      "title": "Git checkout reviews",
       "paragraph": "that is at",
       "direction": "row",
       "color": "coral",
+      "slugImage": "/images/animimage3.jpg",
+      "slugAlt":"haircut",
     
       "diapo": [
         
@@ -67,6 +71,9 @@
       "paragraph": "It is meant to be",
       "direction": "row-reverse",
       "color": "rgb(142, 13, 59)",
+      "slugImage": "/images/animimage5.jpg",
+      "slugAlt": "Stella",
+
       "diapo": [
         {
           "text": "Cannes Festival",

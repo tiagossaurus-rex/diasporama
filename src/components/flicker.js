@@ -9,7 +9,7 @@ export default function Flicker(props) {
   const [flip, setFlip] = useState(true);
   const [imageNumber, setImageNumber] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [sound] = useSound(click, { volume: 0.03 });
+  const [sound] = useSound(click, { volume: 0.9 });
   //   const sound = new Audio("/diasporama/sound/single-click-slide-pojector.mp3");
   const timer = useRef(null); // we can save timer in useRef and pass it to child
   const Images = props.diaporama;

@@ -13,31 +13,40 @@ class Ratings extends React.Component {
             })
             .map((item) => {
               return (
-                <li>
-                  <span>{item[0]}</span>
+                <li key={item[0]}>
+                  <span>{wordSwap(item[0])}</span>
                   <Stars value={item[1]} />
                 </li>
               );
             })}
-          {/* <li> */}
-          {/* <span>Talented</span>
-            <Stars value={this.props.review.organised} />
-          </li>
-          <li>
-            <span>Intuitive</span>
-            <Stars value={this.props.review.reliable} />
-          </li>
-          <li>
-            <span>Ingenuous</span>
-            <Stars value={this.props.review.tidy} />
-          </li>
-        </ul> */}
         </ul>
-
-        {/* <span>Reliable</span><Stars value={this.props.review.reliable /> */}
       </div>
     );
   }
 }
 
 export default Ratings;
+
+function wordSwap(key) {
+  let keySwap;
+  switch (key) {
+    case "reliable":
+      keySwap = "Vernacular";
+      break;
+    case "organised":
+      keySwap = "Messianic";
+      break;
+    case "tidy":
+      keySwap = "Clairvoyant";
+      break;
+    case "selfSufficient":
+      keySwap = "Eloquent";
+      break;
+    case "petCare":
+      keySwap = "Down to Earth";
+      break;
+    default:
+      keySwap = key;
+  }
+  return keySwap;
+}

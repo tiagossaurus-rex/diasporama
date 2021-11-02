@@ -6,7 +6,7 @@ import styled from "styled-components";
 const Nav = styled.nav`
   width: 100%;
   height: 100%;
-  height: ${({ shrinkNav }) => (shrinkNav ? "90px" : "700px")};
+//  height: ${({ shrinkNav }) => (shrinkNav ? "90px" : "700px")};
   border-bottom: 2px solid #f1f1f1;
   background-color: white;
   padding: 0 20px;
@@ -22,10 +22,11 @@ const Nav = styled.nav`
   animation-timing-function: linear;
   
   .logo {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: ${({ shrink }) => (shrink ? "3rem" : "100px")};
+    font-family: "YoungSerif", sans-serif;
+    // font-size: ${({ shrink }) => (shrink ? "3rem" : "100px")};
+    font-size: 40px;
     padding: 15px 0;
-    transition: font-size 2s;
+    //transition: font-size 2s;
   }
 `;
 
@@ -38,31 +39,31 @@ color:black;
 
 export default function Navbar(){
 
-  const [shrink, setShrink] = useState(window.scrollY > 870);
-  const [shrinkNav, setShrinkNav] = useState(window.scrollY > 870);
+  // const [shrink, setShrink] = useState(window.scrollY > 870);
+  // const [shrinkNav, setShrinkNav] = useState(window.scrollY > 870);
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
       
        
-      if (window.scrollY > 870) {
-          setShrinkNav(true)
-      };
-     if  (window.scrollY > 870) {
-    setShrink(true) 
+  //     if (window.scrollY > 870) {
+  //         setShrinkNav(true)
+  //     };
+  //    if  (window.scrollY > 870) {
+  //   setShrink(true) 
             
-     };
-    });
-  }, []);
+  //    };
+  //   });
+  // }, []);
 
   
  
   return (
     
-    <Nav shrink={shrink} shrinkNav={shrinkNav}>
+    <Nav >
       <div className="logo" id="logoShrink">
-      <P> Hélène Martin is</P>
-        Racoonteuse
+      {/* <P> Snippets of</P> */}
+      Provisional Title
         
       </div>
       {/* <Header /> */}

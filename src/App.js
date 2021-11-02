@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./components/header";
+
 import Shuffle from "./components/shuffle";
 import { HashRouter as Router, Switch } from "react-router-dom";
 import { Route } from "react-router-dom";
@@ -28,7 +28,6 @@ export function App() {
         </Route>
         <Route path="/">
           <Home />
-          <Header />
         </Route>
       </Switch>
     </Router>
