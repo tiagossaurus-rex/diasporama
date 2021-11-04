@@ -88,6 +88,11 @@ export const H2 = styled.h2`
   font-family: "YoungSerif", sans-serif;
 `;
 
+export const Button = styled.button`
+  color: teal;
+  text-align: left;
+`;
+
 //     figcaption {
 //       font-size: 30px;
 //       right: 140px;

@@ -5,11 +5,12 @@ import click from "../sound/click.mp3";
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import View from "./view";
+
 export default function Flicker(props) {
   const [flip, setFlip] = useState(true);
   const [imageNumber, setImageNumber] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [sound] = useSound(click, { volume: 0.9 });
+  const [sound] = useSound(click, { volume: 0.1 });
   //   const sound = new Audio("/diasporama/sound/single-click-slide-pojector.mp3");
   const timer = useRef(null); // we can save timer in useRef and pass it to child
   const Images = props.diaporama;
@@ -42,20 +43,24 @@ export default function Flicker(props) {
           <ul>
             <Link to="/">Home</Link>
           </ul>
+          <View.Button
+            onClick={() => {
+              setIsPlaying(!isPlaying);
+            }}
+          >
+            {isPlaying ? "Stop" : "Play"}
+          </View.Button>
         </View.Header>
         <View.Wrapper
-          onMouseEnter={() => {
-            setIsPlaying(true);
-          }}
-          onMouseLeave={() => {
-            setFlip(true);
-            setIsPlaying(false);
-            clearTimeout(timer.current);
-
-            // diaporama.image[0];
-            //reset slide show to first text
-            setImageNumber(0);
-          }}
+        // onMouseEnter={() => {
+        //   setIsPlaying(true);
+        // }}
+        // onMouseLeave={() => {
+        //   setFlip(true);
+        //   setIsPlaying(false);
+        //   clearTimeout(timer.current);
+        //   setImageNumber(0);
+        // }}
         >
           <View.Image
             alt={diaporama.alt}

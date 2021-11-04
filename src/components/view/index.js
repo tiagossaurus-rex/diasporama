@@ -7,9 +7,9 @@ import {
   TextDisplay,
   Header,
   Image,
-  //   ImageFit,
   Figcaption,
   H2,
+  Button,
 } from "./styles/view";
 
 export default function View({
@@ -57,4 +57,8 @@ View.Figcaption = function ViewFigcaption({ children, ...restProps }) {
 
 View.H2 = function ViewH2({ children, ...restProps }) {
   return <H2 {...restProps}>{children}</H2>;
+};
+
+View.Button = function ViewButton({ children, ...restProps }) {
+  return <Button {...restProps}>{children}</Button>;
 };
