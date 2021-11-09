@@ -3,7 +3,7 @@ import styled from "styled-components";
 import raccoon from "../../icons/raccoon.gif";
 import FadeIn from "../FadeIn";
 
-const Loader = styled.div`
+const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,16 +29,13 @@ const Image = styled.img`
   }
 `;
 
-export default () => (
-  <Loader>
+const Loader = () => (
+  <Wrapper>
     <FadeIn delay={1} duration={1000}>
       {" "}
       <Image src={raccoon} alt="raccoon" />
     </FadeIn>
-  </Loader>
+  </Wrapper>
 );
 
-//{reviewNumber + 1} / {reviews.length}
-//{revLoaded < reviews.length && (
-//<Loader calculatedWidth={(revLoaded / reviews.length) * 100} />
-//)}
+export default Loader;
