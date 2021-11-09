@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import raccoon from "../../icons/raccoon.GIF";
+import raccoon from "../../icons/raccoon.gif";
 import FadeIn from "../FadeIn";
 
 const Loader = styled.div`
