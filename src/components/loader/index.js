@@ -30,12 +30,12 @@ const Image = styled.img`
 `;
 
 export default () => (
-  <FadeIn delay={1} duration={1000}>
-    {" "}
-    <Loader>
+  <Loader>
+    <FadeIn delay={1} duration={1000}>
+      {" "}
       <Image src={raccoon} alt="raccoon" />
-    </Loader>
-  </FadeIn>
+    </FadeIn>
+  </Loader>
 );
 
 //{reviewNumber + 1} / {reviews.length}

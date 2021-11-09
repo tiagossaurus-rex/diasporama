@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ReviewList from "../components/reviewList/reviewList.js";
 import Loader from "../components/loader";
 
