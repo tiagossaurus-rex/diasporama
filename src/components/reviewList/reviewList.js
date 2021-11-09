@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from "react";
 import ReviewItem from "../reviewItem/reviewItem.js";
 
-export default function ReviewList() {
+export default function ReviewList({ onFetchCompleted }) {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(
-        "http://localhost:8888/.netlify/functions/getReviews/"
-      ).catch(function (err) {
-        console.log("error in retrieving the API response", err);
-      });
+      const response = await fetch("/.netlify/functions/getReviews/").catch(
+        function (err) {
+          console.log("error in retrieving the API response", err);
+        }
+      );
       const reviews = await response.json();
-
+      onFetchCompleted();
       setReviews(reviews);
     };
 
     fetchData();
-  }, []);
+  }, [setReviews, onFetchCompleted]);
   const reviewsList = reviews.map((review, index) => {
     console.log(review);
     const stringId =

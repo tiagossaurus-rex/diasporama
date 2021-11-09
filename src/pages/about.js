@@ -4,10 +4,14 @@ import Loader from "../components/loader";
 
 export function About() {
   const [loading, setLoading] = useState(true);
+  function fetchCompleted() {
+    setLoading(false);
+  }
 
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 6000);
-  }, []);
-
-  return <>{loading === false ? <ReviewList /> : <Loader />}</>;
+  return (
+    <>
+      <ReviewList onFetchCompleted={fetchCompleted} />
+      {loading && <Loader />}
+    </>
+  );
 }

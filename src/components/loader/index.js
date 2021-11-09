@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import raccoon from "../../icons/raccoon.gif";
+import raccoon from "../../icons/raccoon.GIF";
 import FadeIn from "../FadeIn";
 
 const Loader = styled.div`
-  padding: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,13 +13,28 @@ const Loader = styled.div`
 `;
 
 const Image = styled.img`
-  transition: transform 250ms, opacity 400ms;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  top: 50%;
+  left: 50%;
+  width: 900px;
+  height: 500px;
+  opacity: transparent;
+
+  @media (max-width: 900px) {
+    padding: 200px;
+    width: 450px;
+    height: 250px;
+  }
 `;
 
 export default () => (
-  <FadeIn delay={250} duration={1000}>
+  <FadeIn delay={1} duration={1000}>
     {" "}
-    <Image src={raccoon} alt="raccoon" width="490" height="247" />
+    <Loader>
+      <Image src={raccoon} alt="raccoon" />
+    </Loader>
   </FadeIn>
 );
 
