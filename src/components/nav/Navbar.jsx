@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 // import {Header} from "./components/header";
 
@@ -30,12 +30,7 @@ const Nav = styled.nav`
   }
 `;
 
-const P = styled.p`
-align-items:center;
-font-size: 1rem;
-font-style: italic;
-color:black;
-`;
+
 
 export default function Navbar(){
 
@@ -62,7 +57,7 @@ export default function Navbar(){
     
     <Nav >
       <div className="logo" id="logoShrink">
-      {/* <P> Snippets of</P> */}
+   
       Provisional Title
         
       </div>
