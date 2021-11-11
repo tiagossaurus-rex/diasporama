@@ -1,23 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ReviewItem from "../reviewItem/reviewItem.js";
 
-export default function ReviewList({ onFetchCompleted }) {
-  const [reviews, setReviews] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch("/.netlify/functions/getReviews/").catch(
-        function (err) {
-          console.log("error in retrieving the API response", err);
-        }
-      );
-      const reviews = await response.json();
-      onFetchCompleted();
-      setReviews(reviews);
-    };
-
-    fetchData();
-  }, [setReviews, onFetchCompleted]);
+export default function ReviewList({ reviews }) {
+  // const [reviews, setReviews] = useState([]);
   const reviewsList = reviews.map((review, index) => {
     console.log(review);
     const stringId =
@@ -25,17 +10,19 @@ export default function ReviewList({ onFetchCompleted }) {
     const fullString = stringId.concat(review.photo.publicId.slice(24));
 
     return (
-      <ReviewItem
-        key={index}
-        ownerName={review.ownerName}
-        textDescription={review.description}
-        review={review.review}
-        location={review.location}
-        country={review.country}
-        fullString={fullString}
-        startDate={review.startDate}
-        endDate={review.endDate}
-      />
+      <>
+        <ReviewItem
+          key={index}
+          ownerName={review.ownerName}
+          textDescription={review.description}
+          review={review.review}
+          location={review.location}
+          country={review.country}
+          fullString={fullString}
+          startDate={review.startDate}
+          endDate={review.endDate}
+        />
+      </>
     );
   });
 

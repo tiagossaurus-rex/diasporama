@@ -34,50 +34,60 @@ export default function ReviewItem({
 
   return (
     <Accordion>
-      <div key={index}>
+      <section key={index}>
         <header>
           <section>
-            <img
-              class="imageReview"
-              src={fullString}
-              alt={ownerName}
-              title={ownerName}
-            />
-            <Stars value={averageRating(review)} />
+            <div className="section-image">
+              <img
+                className="imageReview"
+                src={fullString}
+                alt={ownerName}
+                title={ownerName}
+              />
+            </div>
+            <div className="rating">
+              <h4>{ownerName}</h4>
+              <Stars value={averageRating(review)} />
+            </div>
           </section>
-          <Accordion.Title>{ownerName}</Accordion.Title>
         </header>
-        <div class="wrapper">
-          {/* <div class={isDivOpen ? "reviewItemOpen" : "reviewItemClose"}>
-            <span class="reviewParagraph">{firstHalfText}</span>
-
-            {isOpen && <span>{secondHalfText}</span>} */}
-          <div class={isDivOpen ? "reviewItemOpen" : "reviewItemClose"}>
+        <div className="wrapper">
+          <div className={isDivOpen ? "reviewItemOpen" : "reviewItemClose"}>
             {textDescription}
-            <Ratings review={review} />
+            {isOpen && (
+              <>
+                <Ratings review={review} />
+                <button
+                  className="reviewButton"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  Read Less
+                </button>
+              </>
+            )}
           </div>
-
-          <button class="reviewButton" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "Read Less" : "Read More"}
-          </button>
-
-          <div class="reviewDates">
-            {location} . {country} .{" "}
-            {new Date(startDate).toLocaleDateString("en-en", {
+          {!isOpen && (
+            <button className="reviewButton" onClick={() => setIsOpen(!isOpen)}>
+              Read More
+            </button>
+          )}
+        </div>
+        <div className="reviewDates">
+          {location} . {country} .{" "}
+          {new Date(startDate).toLocaleDateString("en-en", {
+            month: "short",
+            day: "2-digit",
+          })}
+          <span> - </span>
+          {new Date(endDate)
+            .toLocaleDateString("en-en", {
+              year: "numeric",
               month: "short",
               day: "2-digit",
-            })}{" "}
-            <span> - </span>
-            {new Date(endDate)
-              .toLocaleDateString("en-en", {
-                year: "numeric",
-                month: "short",
-                day: "2-digit",
-              })
-              .replace(",", "")}
-          </div>
+            })
+            .replace(",", "")}
         </div>
-      </div>
+      </section>
     </Accordion>
   );
 }

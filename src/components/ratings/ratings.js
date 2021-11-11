@@ -15,7 +15,9 @@ class Ratings extends React.Component {
               return (
                 <li key={item[0]}>
                   <span>{wordSwap(item[0])}</span>
-                  <Stars value={item[1]} />
+                  <span>
+                    <Stars value={item[1]} />
+                  </span>
                 </li>
               );
             })}
