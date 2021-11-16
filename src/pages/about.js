@@ -25,7 +25,12 @@ export function About() {
   function onFetchCompleted() {
     setLoading(false);
   }
-
+  const cardLeft = reviews.filter((review, index) => {
+    return index % 2 === 0 ? true : false;
+  });
+  const cardRight = reviews.filter((review, index) => {
+    return index % 2 !== 0 ? true : false;
+  });
   return (
     <>
       {!loading && (
@@ -33,17 +38,13 @@ export function About() {
           <h1>Reviews ({reviews.length})</h1>
           <div className="review-card-layout-wrapper">
             <div className="review-card-layout ">
-              {reviews.map((review, index) => {
-                if (index % 2 === 0) {
-                  return <ReviewCard review={review} key={index} />;
-                }
+              {cardLeft.map((review, index) => {
+                return <ReviewCard review={review} key={index} />;
               })}
             </div>
             <div className="review-card-layout ">
-              {reviews.map((review, index) => {
-                if (index % 2 !== 0) {
-                  return <ReviewCard review={review} key={index} />;
-                }
+              {cardRight.map((review, index) => {
+                return <ReviewCard review={review} key={index} />;
               })}
             </div>
           </div>
