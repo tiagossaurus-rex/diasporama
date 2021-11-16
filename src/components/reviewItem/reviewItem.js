@@ -36,6 +36,7 @@ export default function ReviewItem({
       <header>
         <section>
           <div className="section-image">
+            <span>"</span>
             <img
               className="imageReview"
               src={fullString}

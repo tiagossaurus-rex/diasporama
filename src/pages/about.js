@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ReviewList from "../components/reviewList/reviewList.js";
+// import ReviewList from "../components/reviewList/reviewList.js";
 import Loader from "../components/loader";
 import ReviewCard from "../components/reviewCard/ReviewCard";
 import "./about.css";
@@ -9,11 +9,11 @@ export function About() {
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("/.netlify/functions/getReviews/").catch(
-        function (err) {
-          console.log("error in retrieving the API response", err);
-        }
-      );
+      const response = await fetch(
+        "http://localhost:8888/.netlify/functions/getReviews/"
+      ).catch(function (err) {
+        console.log("error in retrieving the API response", err);
+      });
       const reviews = await response.json();
       onFetchCompleted();
       setReviews(reviews);
@@ -50,7 +50,7 @@ export function About() {
         </>
       )}
 
-      <ReviewList onFetchCompleted={onFetchCompleted} reviews={reviews} />
+      {/* <ReviewList onFetchCompleted={onFetchCompleted} reviews={reviews} /> */}
       {loading && <Loader />}
     </>
   );

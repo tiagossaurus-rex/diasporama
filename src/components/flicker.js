@@ -47,7 +47,7 @@ export default function Flicker(props) {
               setIsPlaying(!isPlaying);
             }}
           >
-            {isPlaying ? "Stop" : "Play"}
+            {isPlaying ? "Pause" : "Play"}
           </View.Button>
         </View.Header>
         <View.Wrapper
