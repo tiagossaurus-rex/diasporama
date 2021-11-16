@@ -1,11 +1,12 @@
 import React from "react";
 import Stars from "../stars/stars.js";
+import "./ratings.css";
 
 class Ratings extends React.Component {
   render() {
     return (
       <div>
-        <ul>
+        <ul className="stars-list">
           {Object.entries(this.props.review)
 
             .filter((item) => {
@@ -13,8 +14,8 @@ class Ratings extends React.Component {
             })
             .map((item) => {
               return (
-                <li key={item[0]}>
-                  <span>{wordSwap(item[0])}</span>
+                <li className="stars-aligned" key={item[0]}>
+                  <span className="word-rating-name">{wordSwap(item[0])}</span>
                   <span>
                     <Stars value={item[1]} />
                   </span>

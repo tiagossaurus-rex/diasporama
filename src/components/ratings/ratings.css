@@ -1,0 +1,18 @@
+.stars-aligned {
+    display: flex;
+}
+
+.stars-aligned li {
+    list-style: none;
+    
+}
+
+.word-rating-name {
+    width: 120px;
+    text-align: left;
+    padding-right: 3px;
+}
+
+.stars-list {
+    padding: 0;
+}

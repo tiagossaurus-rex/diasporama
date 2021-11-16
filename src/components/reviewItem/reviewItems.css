@@ -1,11 +1,5 @@
-.wrapper{
-    display: flex;
-    flex-direction: column;
-}
-
 .reviewItemClose {
     max-height: 40px;
-    color: coral;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -18,10 +12,6 @@
     
 } 
 
-/* .reviewParagrah {
-    white-space: initial;  
-   
-} */
 
 .reviewButton {
     min-width: 10em;
@@ -37,12 +27,9 @@
     width: 64px;
     height: 64px;
     border-radius: 50px;
-}
-.wrapper {
-    width: 800px;
     
 }
-.reviewDates {
-
+.wrapper {
+    width: 100%;  
 }
 

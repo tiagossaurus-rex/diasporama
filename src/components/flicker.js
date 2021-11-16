@@ -21,7 +21,6 @@ export default function Flicker(props) {
       if (isPlaying) {
         setFlip((flip) => !flip);
         timer.current = setTimeout(() => setFlip(false), 5000);
-        console.log(isPlaying);
         setImageNumber((imageNumber) => (imageNumber + 1) % imagesLength);
         sound();
       }
