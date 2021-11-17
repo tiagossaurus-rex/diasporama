@@ -1,10 +1,10 @@
 .reviewItemClose {
-    max-height: 40px;
+    /* max-height: 40px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
   -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical; 
+  -webkit-box-orient: vertical;  */
 }   
 
 .reviewItemOpen {
@@ -14,7 +14,7 @@
 
 
 .reviewButton {
-    min-width: 10em;
+    
     align-self: flex-end;
     position:relative;
     border: none;
@@ -23,12 +23,26 @@
     color: teal;
 }
 
+.reviewButtonSeeMore{
+    display: inline;
+
+}
+.image-and-details {
+    display: flex;
+}
 .imageReview {
+    margin-right: 5px;
     width: 64px;
     height: 64px;
     border-radius: 50px;
     
 }
+
+.rating {
+    display: flex;
+    flex-direction: column;
+}
+
 .wrapper {
     width: 100%;  
 }
