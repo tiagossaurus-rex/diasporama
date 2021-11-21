@@ -30,7 +30,6 @@ export function Review() {
 
   const cardRight = [];
   reviews.forEach((review, index) => {
-    // cardLeft.push(review);
     if (index % 2 === 0) {
       cardLeft.push(review);
     } else {

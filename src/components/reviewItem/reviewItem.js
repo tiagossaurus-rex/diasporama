@@ -81,7 +81,7 @@ export default function ReviewItem({
             title={ownerName}
           />
           <div className="rating">
-            <span>{ownerName}</span>
+            <span className="review-owner-name">{ownerName}</span>
             <span>
               <Stars value={averageRating(review)} />
             </span>
