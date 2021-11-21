@@ -90,9 +90,7 @@
     /* position: fixed;
     /* width: 40%; */
     /* width: 71vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    
    
     /* display: none; */
     visibility: hidden;
@@ -106,6 +104,9 @@
     margin: auto;
     position: fixed;
     object-fit: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   
     
    
@@ -133,9 +134,9 @@
  
   .project-list__item-link:hover{
 
-    filter: blur(0.9rem);
+    filter: blur(0.2rem);
     text-decoration: underline;
-    font-family: "YoungSerif";
+    font-family: "Voyage-Regular";
     font:70px;
   
   

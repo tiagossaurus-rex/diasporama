@@ -4,6 +4,8 @@ import styled from "styled-components";
 
 
 const Nav = styled.nav`
+
+  background: #eae2d2;
   width: 100%;
   height: 100%;
 //  height: ${({ shrinkNav }) => (shrinkNav ? "90px" : "700px")};
@@ -23,7 +25,7 @@ const Nav = styled.nav`
   .logo {
     font-family: "Voyage-Regular", sans-serif;
     // font-size: ${({ shrink }) => (shrink ? "3rem" : "100px")};
-    font-size: 5em;
+    font-size: 2em;
     padding: 15px 0;
     //transition: font-size 2s;
   }

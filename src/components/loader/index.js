@@ -7,14 +7,13 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 50%;
-  left: 50%;
-  color: crimson;
+  // background-color: crimson;
 `;
 
 const Image = styled.img`
   align-items: center;
   justify-content: center;
+  z-index: 3;
 
   @media (max-width: 900px) {
     padding: 100px;

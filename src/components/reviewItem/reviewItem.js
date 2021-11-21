@@ -85,20 +85,24 @@ export default function ReviewItem({
             <span>
               <Stars value={averageRating(review)} />
             </span>
-            <span className="reviewDates">
-              {location} . {country} .{" "}
-              {new Date(startDate).toLocaleDateString("en-en", {
-                month: "short",
-                day: "2-digit",
-              })}
-              <span> - </span>
-              {new Date(endDate)
-                .toLocaleDateString("en-en", {
-                  year: "numeric",
+            <span className="review-dates">
+              <span>
+                {location} . {country}{" "}
+              </span>
+              <span>
+                {new Date(startDate).toLocaleDateString("en-en", {
                   month: "short",
                   day: "2-digit",
-                })
-                .replace(",", "")}
+                })}{" "}
+                <span> - </span>
+                {new Date(endDate)
+                  .toLocaleDateString("en-en", {
+                    year: "numeric",
+                    month: "short",
+                    day: "2-digit",
+                  })
+                  .replace(",", "")}
+              </span>
             </span>
           </div>
         </section>
