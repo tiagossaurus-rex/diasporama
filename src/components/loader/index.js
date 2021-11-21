@@ -7,20 +7,17 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  // background-color: crimson;
 `;
 
 const Image = styled.img`
   align-items: center;
   justify-content: center;
-  z-index: 3;
 
   @media (max-width: 900px) {
-    padding: 100px;
-    width: 50%;
-    heigh: 50%;
-    top: 50%;
-    left: 50%;
+    top: 25%;
+    bottom: 25%;
+    transform: translate(-25%, -25%);
+    width: 200%;
   }
 `;
 
