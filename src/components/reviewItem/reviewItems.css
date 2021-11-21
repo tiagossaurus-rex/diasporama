@@ -31,6 +31,8 @@
 }
 .imageReview {
     transform: translate(-10%, 10%);
+    border: 1px solid black;
+    filter: sepia(10%);
     margin-right: 15px;
     width: 64px;
     height: 64px;

@@ -60,8 +60,6 @@ export function Review() {
           </div>
         </>
       )}
-
-      {/* <ReviewList onFetchCompleted={onFetchCompleted} reviews={reviews} /> */}
       {loading && <Loader />}
     </>
   );

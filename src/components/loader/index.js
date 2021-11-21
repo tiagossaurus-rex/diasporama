@@ -15,14 +15,13 @@ const Wrapper = styled.div`
 const Image = styled.img`
   align-items: center;
   justify-content: center;
-  padding: 100px;
-  width: 50%;
-  heigh: 50%;
-  top: 50%;
-  left: 50%;
 
   @media (max-width: 900px) {
-    padding: 20px;
+    padding: 100px;
+    width: 50%;
+    heigh: 50%;
+    top: 50%;
+    left: 50%;
   }
 `;
 
