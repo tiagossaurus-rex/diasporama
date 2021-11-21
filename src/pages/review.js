@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 // import ReviewList from "../components/reviewList/reviewList.js";
 import Loader from "../components/loader";
 import ReviewCard from "../components/reviewCard/ReviewCard";
-import "./about.css";
+import "./review.css";
 
-export function About() {
+export function Review() {
   const [loading, setLoading] = useState(true);
   const [reviews, setReviews] = useState([]);
   useEffect(() => {

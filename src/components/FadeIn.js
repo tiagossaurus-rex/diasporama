@@ -4,10 +4,10 @@ import styled, { keyframes } from "styled-components";
 
 const fadeIn = keyframes`
   from {
-    opacity: 0.09;
+    opacity: 0.3;
   }
   to {
-    opacity: 0.1;
+    opacity: 0.09;
   }
 `;
 const FadeIn = ({ duration = 600, delay = 0, children, ...delegated }) => {

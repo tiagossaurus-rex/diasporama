@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import raccoon from "../../icons/racooneyes-3.png";
+import raccoon from "../../icons/racooneyes-4.png";
 import FadeIn from "../FadeIn";
 
 const Wrapper = styled.div`
@@ -16,10 +16,10 @@ const Image = styled.img`
   align-items: center;
   justify-content: center;
   padding: 100px;
+  width: 50%;
+  heigh: 50%;
   top: 50%;
   left: 50%;
-
-  opacity: transparent;
 
   @media (max-width: 900px) {
     padding: 20px;
@@ -28,7 +28,7 @@ const Image = styled.img`
 
 const Loader = () => (
   <Wrapper>
-    <FadeIn delay={1} duration={1000}>
+    <FadeIn delay={1} duration={500}>
       {" "}
       <Image src={raccoon} alt="raccoon" />
     </FadeIn>

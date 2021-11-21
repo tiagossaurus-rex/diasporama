@@ -22,9 +22,9 @@ const Nav = styled.nav`
   animation-timing-function: linear;
   
   .logo {
-    font-family: "YoungSerif", sans-serif;
+    font-family: "Voyage-Regular", sans-serif;
     // font-size: ${({ shrink }) => (shrink ? "3rem" : "100px")};
-    font-size: 40px;
+    font-size: 5em;
     padding: 15px 0;
     //transition: font-size 2s;
   }
@@ -57,9 +57,8 @@ export default function Navbar(){
     
     <Nav >
       <div className="logo" id="logoShrink">
-   
-      Provisional Title
-        
+    
+        Racoonteuse
       </div>
       {/* <Header /> */}
     </Nav>

@@ -4,13 +4,9 @@ import Shuffle from "./components/shuffle";
 import { HashRouter as Router, Switch } from "react-router-dom";
 import { Route } from "react-router-dom";
 import { Home } from "./pages/home";
-import { About } from "./pages/about";
+import { Review } from "./pages/review";
 
 export function App() {
-  // function Dumie() {
-  //   const { slug } = useParams();
-  //   return <div>This my slug:{slug}</div>;
-  // }
   return (
     <Router>
       <Switch>
@@ -21,7 +17,7 @@ export function App() {
           <p>I will be the projects page </p>
         </Route>
         <Route path="/Reviews">
-          <About />
+          <Review />
         </Route>
         <Route path="/:slug">
           <Shuffle />
