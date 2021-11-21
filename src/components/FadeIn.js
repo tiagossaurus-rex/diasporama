@@ -7,7 +7,7 @@ const fadeIn = keyframes`
     opacity: 0.09;
   }
   to {
-    opacity: 0.2;
+    opacity: 0.1;
   }
 `;
 const FadeIn = ({ duration = 600, delay = 0, children, ...delegated }) => {

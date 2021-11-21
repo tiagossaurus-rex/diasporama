@@ -20,7 +20,7 @@ export function App() {
         <Route path="/Projects">
           <p>I will be the projects page </p>
         </Route>
-        <Route path="/About">
+        <Route path="/Reviews">
           <About />
         </Route>
         <Route path="/:slug">

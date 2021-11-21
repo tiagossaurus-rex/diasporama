@@ -37,6 +37,9 @@ exports.handler = async (event, context) => {
       .trim()
       .replace(/undefined/g, "null")
       .replace(/(\b)cat(\b)/g, "raccoon")
+      .replace(/(\b)Helene(\b)/g, "R.")
+      .replace(/(\b)Hélène(\b)/g, "R.")
+      .replace(/(\b)Hèléne(\b)/g, "R.")
       .replace(/(\b)cats(\b)/g, "raccoons")
       .replace(/(\b)house(\b)/g, "den");
 

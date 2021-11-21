@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import raccoon from "../../icons/raccoon.gif";
+import raccoon from "../../icons/racooneyes-3.png";
 import FadeIn from "../FadeIn";
 
 const Wrapper = styled.div`
@@ -18,14 +18,11 @@ const Image = styled.img`
   padding: 100px;
   top: 50%;
   left: 50%;
-  width: 900px;
-  height: 500px;
+
   opacity: transparent;
 
   @media (max-width: 900px) {
-    padding: 200px;
-    width: 450px;
-    height: 250px;
+    padding: 20px;
   }
 `;
 

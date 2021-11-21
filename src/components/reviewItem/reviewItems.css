@@ -1,26 +1,23 @@
-/* .reviewItemClose { */
-    /* max-height: 40px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;  */
-/* }    */
 
 .reviewItemOpen {
     color: teal;
+   
+    
+} 
+.reviewItemClose {
+   
+    padding-bottom: 50px;
     
 } 
 
-
 .reviewButton {
-    
     align-self: flex-end;
     position:relative;
     border: none;
     text-decoration: underline;
     background: transparent;
     color: teal;
+    padding-left:0;
 }
 
 .reviewButtonSeeMore{
@@ -31,7 +28,7 @@
     display: flex;
 }
 .imageReview {
-    margin-right: 5px;
+    margin-right: 15px;
     width: 64px;
     height: 64px;
     border-radius: 50px;
@@ -42,6 +39,10 @@
     display: flex;
     flex-direction: column;
 }
+
+
+
+
 
 .wrapper {
     width: 100%;  

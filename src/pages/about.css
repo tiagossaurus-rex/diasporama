@@ -8,15 +8,14 @@
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
-    padding: 20px;
+    /* padding: 20px; */
     flex-direction: column;
 }
 
 
 .review-header h1 {
-    margin-left: 50px;
-    padding-bottom: 0;
-    color: red;
+    margin-left: 34px;
+   
 }
 
 @media (min-width: 480px) {
@@ -25,11 +24,18 @@
     flex-direction: row;
 }
 
-    .review-card-layout{
-     width: 50%;
+.review-card-layout{
+    width: 50%;
     padding: 20px;
+    margin-left: 50px;
 
-    }
+}
+
+.review-header h1 {
+    margin-left: 112px;
+    padding-bottom: 0;
+   
+}
     
     
 }

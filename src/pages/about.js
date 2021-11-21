@@ -9,11 +9,11 @@ export function About() {
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("/.netlify/functions/getReviews/").catch(
-        function (err) {
-          console.log("error in retrieving the API response", err);
-        }
-      );
+      const response = await fetch(
+        "http://localhost:8888/.netlify/functions/getReviews/"
+      ).catch(function (err) {
+        console.log("error in retrieving the API response", err);
+      });
       const reviews = await response.json();
       onFetchCompleted();
       setReviews(reviews);
@@ -25,12 +25,6 @@ export function About() {
   function onFetchCompleted() {
     setLoading(false);
   }
-  // const cardLeft = reviews.filter((review, index) => {
-  //   return index % 2 === 0 ? true : false;
-  // });
-  // const cardRight = reviews.filter((review, index) => {
-  //   return index % 2 !== 0 ? true : false;
-  // });=
 
   const cardLeft = [];
 

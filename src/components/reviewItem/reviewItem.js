@@ -34,34 +34,38 @@ export default function ReviewItem({
   return (
     <section key={index}>
       <div className="wrapper">
+        <span>"</span>
+
         <div className={isDivOpen ? "reviewItemOpen" : "reviewItemClose"}>
-          <p>
-            {descStart}
-            {isOpen && (
-              <>
-                {descMore}
-                <Ratings review={review} />
-                <button
-                  className="reviewButton"
-                  onClick={() => setIsOpen(!isOpen)}
-                >
-                  Read Less
-                </button>
-              </>
-            )}
-            {!isOpen && (
-              <>
-                <span> ... </span>
-                <button
-                  className="reviewButton reviewButtonSeeMore"
-                  onClick={() => setIsOpen(!isOpen)}
-                >
-                  Read More
-                </button>
-              </>
-            )}
-          </p>
+          {descStart}
+
+          {isOpen && (
+            <>
+              {descMore}
+              <Ratings review={review} />
+              <button
+                className="reviewButton"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                Read Less
+              </button>
+            </>
+          )}
+
+          {!isOpen && (
+            <>
+              <span> ... </span>
+
+              <button
+                className="reviewButton reviewButtonSeeMore"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                Read More
+              </button>
+            </>
+          )}
         </div>
+
         <section className="image-and-details">
           <img
             className="imageReview"

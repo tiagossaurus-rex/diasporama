@@ -86,8 +86,6 @@
 }
 @media (min-width: 900px) {
 
-
- 
   .project-list__item-image {
     /* position: fixed;
     /* width: 40%; */
@@ -135,7 +133,7 @@
  
   .project-list__item-link:hover{
 
-  
+    filter: blur(0.9rem);
     text-decoration: underline;
     font-family: "YoungSerif";
     font:70px;

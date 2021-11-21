@@ -7,9 +7,9 @@ function Header() {
   return (
     <header>
       <ul className="project-list">
-        <li>
+        {/* <li>
           <Link to="/">Home</Link>
-        </li>
+        </li> */}
         {DiaporamaData.map((diaporama) => (
           <li className="project-list__item" key={diaporama.title}>
             <Link className="project-list__item-link" to={`/${diaporama.slug}`}>
