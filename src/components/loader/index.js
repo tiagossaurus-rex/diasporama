@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import raccoon from "../../icons/racooneyes-4.png";
+import raccoon from "../../icons/racooneyes-5.png";
 import FadeIn from "../FadeIn";
 
 const Wrapper = styled.div`
@@ -29,7 +29,6 @@ const Image = styled.img`
 const Loader = () => (
   <Wrapper>
     <FadeIn delay={1} duration={500}>
-      {" "}
       <Image src={raccoon} alt="raccoon" />
     </FadeIn>
   </Wrapper>

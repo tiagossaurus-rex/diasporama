@@ -40,11 +40,14 @@
     flex-direction: column;
 }
 
+.review-blockquote img{
+    width:20%;
+
+}
 
 
-
-
-.wrapper {
+.review-wrapper {
     width: 100%;  
 }
+
 

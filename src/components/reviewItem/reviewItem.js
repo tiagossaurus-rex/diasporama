@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Ratings from "../ratings/ratings.js";
 import Stars from "../stars/stars.js";
+import apostrophe from "../../icons/apostrophe.png";
 import "./reviewItems.css";
 
 function averageRating(review) {
@@ -33,37 +34,43 @@ export default function ReviewItem({
 
   return (
     <section key={index}>
-      <div className="wrapper">
-        <span>"</span>
+      <div className="review-wrapper">
+        <div className="review-identation">
+          <div className="review-quote-header">
+            <span className="review-blockquote">
+              <img src={apostrophe} alt="apostrophe" />
+            </span>
 
-        <div className={isDivOpen ? "reviewItemOpen" : "reviewItemClose"}>
-          {descStart}
+            <div className={isDivOpen ? "reviewItemOpen" : "reviewItemClose"}>
+              {descStart}
 
-          {isOpen && (
-            <>
-              {descMore}
-              <Ratings review={review} />
-              <button
-                className="reviewButton"
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                Read Less
-              </button>
-            </>
-          )}
+              {isOpen && (
+                <>
+                  {descMore}
+                  <Ratings review={review} />
+                  <button
+                    className="reviewButton"
+                    onClick={() => setIsOpen(!isOpen)}
+                  >
+                    Read Less
+                  </button>
+                </>
+              )}
 
-          {!isOpen && (
-            <>
-              <span> ... </span>
+              {!isOpen && (
+                <>
+                  <span> ... </span>
 
-              <button
-                className="reviewButton reviewButtonSeeMore"
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                Read More
-              </button>
-            </>
-          )}
+                  <button
+                    className="reviewButton reviewButtonSeeMore"
+                    onClick={() => setIsOpen(!isOpen)}
+                  >
+                    Read More
+                  </button>
+                </>
+              )}
+            </div>
+          </div>
         </div>
 
         <section className="image-and-details">
