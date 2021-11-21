@@ -18,12 +18,13 @@
     border: none;
     text-decoration: underline;
     background: transparent;
-    color: teal;
+    color: slateblue;
     padding-left:0;
 }
 
 .reviewButtonSeeMore{
     display: inline;
+    
 
 }
 .image-and-details {
@@ -31,7 +32,7 @@
 }
 .imageReview {
     transform: translate(-10%, 10%);
-    border: 1px solid black;
+    border: 1px solid slategray;
     filter: sepia(10%);
     margin-right: 15px;
     width: 64px;
