@@ -23,7 +23,7 @@ const Image = styled.img`
 
 const Loader = () => (
   <Wrapper>
-    <FadeIn delay={1} duration={500}>
+    <FadeIn delay={1} duration={400}>
       <Image src={raccoon} alt="raccoon" />
     </FadeIn>
   </Wrapper>

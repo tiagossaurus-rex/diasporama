@@ -11,13 +11,21 @@
     flex-direction: column;
 }
 
+.review-header {
+    justify-content: start;
+    display: flex;
+    align-items: flex-end;
+    margin: 0 auto;
+
+}
+
 
 .review-header h1 {
+    margin-left: 28px;
     font-size: 3em;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: #272727;
-    -webkit-text-stroke-width: 1px;  
-   
+    -webkit-text-stroke-width: 1px;    
 }
 
 
@@ -35,9 +43,8 @@
 }
 
 .review-header h1 {
-    margin-left: 188px;
-    padding-bottom: 0;
-   
+    margin-left: 142px;
+    margin-bottom: 23px;
 }
     
     
