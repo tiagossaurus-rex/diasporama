@@ -7,7 +7,6 @@
     display: flex;
     margin: 0 auto;
     max-width: 1200px;
-    width: 100%;
     flex-direction: column;
 }
 
@@ -32,7 +31,7 @@
 }
 
 
-@media (min-width: 480px) {
+@media (min-width: 478px) {
 
 .review-card-layout-wrapper {
     flex-direction: row;
