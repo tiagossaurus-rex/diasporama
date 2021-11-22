@@ -7,7 +7,7 @@
 .review-card-layout-wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+ 
 }
 
 .review-header {
@@ -31,7 +31,7 @@
 }
 
 
-@media (min-width: 480px) {
+@media (min-width: 767px) {
 
 .review-card-layout-wrapper {
     margin: 0 auto;
