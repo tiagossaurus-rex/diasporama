@@ -4,12 +4,12 @@ import { HashRouter as Router, Switch } from "react-router-dom";
 import { Route } from "react-router-dom";
 import { Home } from "./pages/home";
 import { Review } from "./pages/review";
-import { DotRing } from "./components/dotRing/dotRing";
+// import { DotRing } from "./components/dotRing/dotRing";
 
 export function App() {
   return (
     <Router>
-      <DotRing />
+      {/* <DotRing /> */}
       <Switch>
         <Route path="/Contact">
           <p>I will be the contact page</p>
