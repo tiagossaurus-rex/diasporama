@@ -15,7 +15,10 @@
     justify-content: start;
     display: flex;
     align-items: flex-end;
+    /* margin: 0 auto; */
     margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
 
 }
 
@@ -43,7 +46,7 @@
 }
 
 .review-header h1 {
-    margin-left: 208px;
+    margin-left: 85px;
     margin-bottom: 23px;
 }
     
