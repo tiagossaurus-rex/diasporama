@@ -62,6 +62,8 @@ export default function Navbar(){
         Racoonteuse
       </div>
       {/* <Header /> */}
+      <span>Projects</span>
+      <span>Contact</span>
     </Nav>
     
   );

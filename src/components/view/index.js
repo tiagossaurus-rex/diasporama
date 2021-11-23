@@ -9,7 +9,8 @@ import {
   Image,
   Figcaption,
   H2,
-  Button,
+  Play,
+  Close,
 } from "./styles/view";
 
 export default function View({
@@ -59,6 +60,9 @@ View.H2 = function ViewH2({ children, ...restProps }) {
   return <H2 {...restProps}>{children}</H2>;
 };
 
-View.Button = function ViewButton({ children, ...restProps }) {
-  return <Button {...restProps}>{children}</Button>;
+View.Play = function ViewPlay({ children, ...restProps }) {
+  return <Play {...restProps}>{children}</Play>;
+};
+View.Close = function ViewButton({ children, ...restProps }) {
+  return <Close {...restProps}>{children}</Close>;
 };

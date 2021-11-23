@@ -39,42 +39,31 @@ export default function Flicker(props) {
           <h1>{props.title}</h1>
           <p>{props.paragraph}</p>
 
-          <ul>
-            <Link to="/">Home</Link>
-          </ul>
-          <View.Button
+          <View.Play
             onClick={() => {
               setIsPlaying(!isPlaying);
             }}
           >
             {isPlaying ? "Pause" : "Play"}
-          </View.Button>
+          </View.Play>
+
+          <Link to="/">
+            <View.Close />
+          </Link>
         </View.Header>
-        <View.Wrapper
-        // onMouseEnter={() => {
-        //   setIsPlaying(true);
-        // }}
-        // onMouseLeave={() => {
-        //   setFlip(true);
-        //   setIsPlaying(false);
-        //   clearTimeout(timer.current);
-        //   setImageNumber(0);
-        // }}
-        >
+        <View.Wrapper>
           <View.Image
             alt={diaporama.alt}
-            // src={`/diasporama${diaporama.image}`}
             src={process.env.PUBLIC_URL + `${diaporama.image}`}
           />
 
           <View.Text flip={flip}>
             <View.H2>{diaporama.text}</View.H2>
-
             <View.Figcaption>
               {imageNumber + 1} / {Images.length}
             </View.Figcaption>
           </View.Text>
-          <p>{diaporama.paragraph}</p>
+          {/* <p>{diaporama.paragraph}</p> */}
         </View.Wrapper>
       </View.Section>
     </>

@@ -12,7 +12,7 @@ export const Section = styled.section`
 `;
 
 export const Wrapper = styled.div`
-  background: #fff;
+  background-color: black;
   margin: 0;
   position: relative;
   width: 50vw;
@@ -57,6 +57,7 @@ export const Image = styled.img`
   height: 100vh;
   position: fixed;
   object-fit: cover;
+  border-radius: 15px;
   width: 50%;
   @media (max-width: 900px) {
     width: 100%;
@@ -88,9 +89,34 @@ export const H2 = styled.h2`
   font-family: "YoungSerif", sans-serif;
 `;
 
-export const Button = styled.button`
+export const Play = styled.button`
   color: teal;
   text-align: left;
+`;
+export const Close = styled.button`
+  background: none;
+  border: 0;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  padding: 0;
+  position: relative;
+  &::before,
+  &::after {
+    background-color: #000;
+    content: "";
+    height: 24px;
+    width: 2px;
+    position: absolute;
+    top: 0;
+    left: 9px;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
 `;
 
 //     figcaption {
