@@ -11,6 +11,7 @@ import {
   H2,
   Play,
   Close,
+  CloseWrapper,
 } from "./styles/view";
 
 export default function View({
@@ -65,4 +66,8 @@ View.Play = function ViewPlay({ children, ...restProps }) {
 };
 View.Close = function ViewButton({ children, ...restProps }) {
   return <Close {...restProps}>{children}</Close>;
+};
+
+View.CloseWrapper = function ViewCloseWrapper({ children, ...restProps }) {
+  return <CloseWrapper {...restProps}>{children}</CloseWrapper>;
 };

@@ -46,10 +46,11 @@ export default function Flicker(props) {
           >
             {isPlaying ? "Pause" : "Play"}
           </View.Play>
-
-          <Link to="/">
-            <View.Close />
-          </Link>
+          <View.CloseWrapper>
+            <Link to="/">
+              <View.Close />
+            </Link>
+          </View.CloseWrapper>
         </View.Header>
         <View.Wrapper>
           <View.Image

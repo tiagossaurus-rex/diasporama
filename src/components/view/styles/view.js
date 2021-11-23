@@ -90,12 +90,38 @@ export const H2 = styled.h2`
 `;
 
 export const Play = styled.button`
-  color: teal;
-  text-align: left;
+  //circle
+  // position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+
+  display: block;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0 auto;
+  background-color: transparent;
+
+  &:after {
+    //play button
+    // position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 14px);
+    display: block;
+    content: "";
+    box-sizing: border-box;
+    border-color: transparent transparent transparent black;
+    border-style: solid;
+    border-width: 26px 0 26px 40px;
+  }
 `;
 export const Close = styled.button`
   background: none;
   border: 0;
+  left: 2px;
+  bottom: 2px;
   cursor: pointer;
   height: 24px;
   width: 24px;
@@ -119,18 +145,21 @@ export const Close = styled.button`
   }
 `;
 
-//     figcaption {
-//       font-size: 30px;
-//       right: 140px;
-//     }
-//     img {
-//       width: 100%;
-//     }
-//     h2 {
-//       font-size: 20px;
-//       position: relative;
-//     }
-//     h1 {
-//       font-size: 80px;
-//     }
-//   }
+export const CloseWrapper = styled.div`
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 30px;
+  height: 20px;
+  width: 20px;
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+  cursor: pointer;
+  position: fixed;
+  z-index: 4;
+  top: unset;
+  bottom: 20px;
+  right: 20px;
+`;
