@@ -109,6 +109,7 @@ export const Play = styled.button`
 `;
 export const Pause = styled.button`
   border: none;
+  background-color: transparent;
 
   // position: absolute;
   top: 12px;
@@ -117,8 +118,11 @@ export const Pause = styled.button`
   content: "";
   box-sizing: border-box;
   border-color: black;
+  width: 20px;
+  height: 20px;
   border-style: double;
-  border-width: 0px 20px 0px 20px;
+  border-width: 0px 0px 0px 15px;
+  margin-right: -10px;
 `;
 
 export const Close = styled.button`
