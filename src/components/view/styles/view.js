@@ -98,21 +98,27 @@ export const Play = styled.button`
     // position: absolute;
     top: 12px;
     left: 12px;
+    margin-right: -6px;
     display: block;
     content: "";
     box-sizing: border-box;
-    border-color: transparent transparent transparent black;
+    border-color: transparent transparent transparent #000;
     border-style: solid;
     border-width: 13px 0 13px 20px;
   }
 `;
 export const Pause = styled.button`
   border: none;
-  background-color: crimsom;
-  &:after {
-    border-style: double;
-    border-width: 0px 0 0px 20px;
-  }
+
+  // position: absolute;
+  top: 12px;
+  left: 12px;
+  display: block;
+  content: "";
+  box-sizing: border-box;
+  border-color: black;
+  border-style: double;
+  border-width: 0px 20px 0px 20px;
 `;
 
 export const Close = styled.button`
@@ -171,6 +177,7 @@ export const ButtonWrapper = styled.div`
   justify-content: center;
   overflow: hidden;
   display: flex;
+  align-items: center;
   cursor: pointer;
   position: fixed;
   height: 20px;
