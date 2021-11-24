@@ -90,33 +90,31 @@ export const H2 = styled.h2`
 `;
 
 export const Play = styled.button`
-  //circle
-  // position: absolute;
-  top: calc(50% - 25px);
-  left: calc(50% - 50px);
-  width: 100px;
-  height: 100px;
-
-  display: block;
-  border: 2px solid black;
-  border-radius: 50%;
-  padding: 0;
-  margin: 0 auto;
+  border: none;
   background-color: transparent;
 
   &:after {
     //play button
     // position: absolute;
-    top: calc(50% - 25px);
-    left: calc(50% - 14px);
+    top: 12px;
+    left: 12px;
     display: block;
     content: "";
     box-sizing: border-box;
     border-color: transparent transparent transparent black;
     border-style: solid;
-    border-width: 26px 0 26px 40px;
+    border-width: 13px 0 13px 20px;
   }
 `;
+export const Pause = styled.button`
+  border: none;
+  background-color: crimsom;
+  &:after {
+    border-style: double;
+    border-width: 0px 0 0px 20px;
+  }
+`;
+
 export const Close = styled.button`
   background: none;
   border: 0;
@@ -162,4 +160,23 @@ export const CloseWrapper = styled.div`
   top: unset;
   bottom: 20px;
   right: 20px;
+`;
+
+export const ButtonWrapper = styled.div`
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 30px;
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+  cursor: pointer;
+  position: fixed;
+  height: 20px;
+  width: 20px;
+  z-index: 4;
+  top: unset;
+  bottom: 20px;
+  right: 80px;
 `;

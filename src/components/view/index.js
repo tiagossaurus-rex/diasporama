@@ -10,7 +10,9 @@ import {
   Figcaption,
   H2,
   Play,
+  Pause,
   Close,
+  ButtonWrapper,
   CloseWrapper,
 } from "./styles/view";
 
@@ -64,10 +66,17 @@ View.H2 = function ViewH2({ children, ...restProps }) {
 View.Play = function ViewPlay({ children, ...restProps }) {
   return <Play {...restProps}>{children}</Play>;
 };
-View.Close = function ViewButton({ children, ...restProps }) {
+View.Pause = function ViewPause({ children, ...restProps }) {
+  return <Pause {...restProps}>{children}</Pause>;
+};
+View.Close = function ViewClose({ children, ...restProps }) {
   return <Close {...restProps}>{children}</Close>;
 };
 
 View.CloseWrapper = function ViewCloseWrapper({ children, ...restProps }) {
   return <CloseWrapper {...restProps}>{children}</CloseWrapper>;
+};
+
+View.ButtonWrapper = function ViewButtonWrapper({ children, ...restProps }) {
+  return <ButtonWrapper {...restProps}>{children}</ButtonWrapper>;
 };

@@ -38,14 +38,14 @@ export default function Flicker(props) {
         <View.Header>
           <h1>{props.title}</h1>
           <p>{props.paragraph}</p>
-
-          <View.Play
+          <View.ButtonWrapper
             onClick={() => {
               setIsPlaying(!isPlaying);
             }}
           >
-            {isPlaying ? "Pause" : "Play"}
-          </View.Play>
+            {isPlaying ? <View.Pause /> : <View.Play />}
+          </View.ButtonWrapper>
+
           <View.CloseWrapper>
             <Link to="/">
               <View.Close />
