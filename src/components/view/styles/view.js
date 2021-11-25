@@ -12,10 +12,10 @@ export const Section = styled.section`
 `;
 
 export const Wrapper = styled.div`
-  background-color: black;
-  margin: 0;
+  // background-color: black;
+  // margin: 0;
   position: relative;
-  width: 50vw;
+  // width: 50vw;
   @media (max-width: 900px) {
     flex-direction: column-reverse;
   }
@@ -55,7 +55,7 @@ export const TextDisplay = styled.h2`
 export const Image = styled.img`
   padding-top: 0;
   height: 100vh;
-  position: fixed;
+  // position: fixed;
   object-fit: cover;
   border-radius: 15px;
   width: 50%;
