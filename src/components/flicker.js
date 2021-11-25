@@ -11,7 +11,6 @@ export default function Flicker(props) {
   const [imageNumber, setImageNumber] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [sound] = useSound(click, { volume: 0.1 });
-  //   const sound = new Audio("/diasporama/sound/single-click-slide-pojector.mp3");
   const timer = useRef(null); // we can save timer in useRef and pass it to child
   const Images = props.diaporama;
 
@@ -29,6 +28,17 @@ export default function Flicker(props) {
   }, [Images.length, isPlaying, sound]);
   const diaporama = Images[imageNumber];
 
+  // const columnLeft = [];
+
+  // const columnRight = [];
+  // props.paragraph.forEach((paragraph, index) => {
+  //   if (index % 2 === 0) {
+  //     columnLeft.push(paragraph);
+  //   } else {
+  //     columnRight.push(paragraph);
+  //   }
+  // });
+
   return (
     <>
       <View.Section>
@@ -36,6 +46,23 @@ export default function Flicker(props) {
           <View.Textwrapper>
             <View.H1>{props.title}</View.H1>
             <View.P>{props.paragraph}</View.P>
+
+            {/* <View.Columnwrapper>
+              <View.Columnlayout>
+                {[
+                  columnLeft.map((paragraph, index) => {
+                    return (
+                      <View.Columnleft paragraph={paragraph} key={index} />
+                    );
+                  }),
+                ]}
+              </View.Columnlayout>
+              <View.Columnlayout>
+                {columnRight.map((paragraph, index) => {
+                  return <View.Columnright paragraph={paragraph} key={index} />;
+                })}
+              </View.Columnlayout>
+            </View.Columnwrapper> */}
           </View.Textwrapper>
           <View.ButtonWrapper
             onClick={() => {

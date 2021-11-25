@@ -98,6 +98,7 @@ export const H2 = styled.h2`
 export const Play = styled.button`
   border: none;
   background-color: transparent;
+  cursor: pointer;
 
   &:after {
     //play button
@@ -108,7 +109,7 @@ export const Play = styled.button`
     display: block;
     content: "";
     box-sizing: border-box;
-    border-color: transparent transparent transparent #000;
+    border-color: transparent transparent transparent black;
     border-style: solid;
     border-width: 13px 0 13px 20px;
   }
@@ -116,8 +117,7 @@ export const Play = styled.button`
 export const Pause = styled.button`
   border: none;
   background-color: transparent;
-
-  // position: absolute;
+  cursor: pointer;
   top: 12px;
   left: 12px;
   display: block;
@@ -143,7 +143,7 @@ export const Close = styled.button`
   position: relative;
   &::before,
   &::after {
-    background-color: #000;
+    background-color: black;
     content: "";
     height: 24px;
     width: 2px;
@@ -161,7 +161,7 @@ export const Close = styled.button`
 
 export const CloseWrapper = styled.div`
   background: transparent;
-  border: 2px solid #000;
+  border: 2px solid black;
   border-radius: 30px;
   height: 20px;
   width: 20px;
@@ -180,7 +180,7 @@ export const CloseWrapper = styled.div`
 
 export const ButtonWrapper = styled.div`
   background: transparent;
-  border: 2px solid #000;
+  border: 2px solid black;
   border-radius: 30px;
   padding: 8px;
   align-items: center;
@@ -197,3 +197,8 @@ export const ButtonWrapper = styled.div`
   bottom: 20px;
   right: 80px;
 `;
+
+// export const Columnwrapper = styled.div``;
+// export const Columnlayout = styled.div``;
+// export const Columnleft = styled.div``;
+// export const Columnright = styled.div``;

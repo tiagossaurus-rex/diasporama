@@ -79,7 +79,7 @@
 
 .project-list__item-image {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 27px;
   z-index: 1;
 
   
@@ -141,6 +141,11 @@
   
   
   
+  }
+
+  .project-list__item-image{
+    margin-top: 27px;
+    
   }
   
 
