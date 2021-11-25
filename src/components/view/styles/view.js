@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
   // background-color: black;
   // margin: 0;
   position: relative;
-  // width: 50vw;
+  width: 50vw;
   @media (max-width: 900px) {
     flex-direction: column-reverse;
   }
@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
 export const Figure = styled.figure`
   margin: 0;
   position: relative;
-  width: 50vw;
+  width: 100%;
   @media (max-width: 900px) {
     flex-grow: 1;
     width: 100vw;
@@ -35,6 +35,7 @@ export const Text = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-radius: 15px;
   position: absolute;
   top: 0;
   width: 100%;
@@ -55,12 +56,12 @@ export const TextDisplay = styled.h2`
 export const Image = styled.img`
   padding-top: 0;
   height: 100vh;
-  // position: fixed;
+  // // position: fixed;
   object-fit: cover;
   border-radius: 15px;
-  width: 50%;
+  width: 100%;
   @media (max-width: 900px) {
-    width: 100%;
+    width: 200%;
   }
 `;
 
