@@ -27,17 +27,16 @@ export default function Flicker(props) {
     }, 4500);
     return () => clearInterval(id);
   }, [Images.length, isPlaying, sound]);
-
-  // const boxClass = flip ? "boxFlickerBlack" : "boxFlickerClear";
   const diaporama = Images[imageNumber];
-  // const diaporama = Images[0];
-  // const TextDisplay = flip ? View.Text : View.NoText;
+
   return (
     <>
       <View.Section>
         <View.Header>
-          <h1>{props.title}</h1>
-          <p>{props.paragraph}</p>
+          <View.Textwrapper>
+            <View.H1>{props.title}</View.H1>
+            <View.P>{props.paragraph}</View.P>
+          </View.Textwrapper>
           <View.ButtonWrapper
             onClick={() => {
               setIsPlaying(!isPlaying);

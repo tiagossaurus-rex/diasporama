@@ -64,30 +64,35 @@ export const Image = styled.img`
     width: 200%;
   }
 `;
-
-// export const ImageFit = styled.div`
-//   height: 100vh;
-//   object-fit: cover;
-//   position: fixed;
-//   width: 50%;
-// `;
-
-export const Header = styled.header`
-  width: 50vw;
-  height: 50vh;
-`;
-
 export const Figcaption = styled.figcaption`
   color: red;
   font-size: 20px;
   z-index: 1;
 `;
 
+export const Header = styled.header`
+  width: 50vw;
+  height: 50vh;
+`;
+
+export const Textwrapper = styled.div`
+  padding: 20px;
+`;
+export const H1 = styled.h1`
+  font-weight: 900;
+  font-size: 2rem;
+  font-family: "Voyage-Regular", sans-serif;
+`;
+
+export const P = styled.p`
+  font-size: 1em;
+`;
+
 export const H2 = styled.h2`
   font-weight: 900;
   font-size: 10vh;
   text-decoration: underline overline;
-  font-family: "YoungSerif", sans-serif;
+  font-family: "Voyage-Regular", sans-serif;
 `;
 
 export const Play = styled.button`

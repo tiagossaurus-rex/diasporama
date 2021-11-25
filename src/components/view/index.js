@@ -8,6 +8,9 @@ import {
   Header,
   Image,
   Figcaption,
+  Textwrapper,
+  H1,
+  P,
   H2,
   Play,
   Pause,
@@ -47,9 +50,6 @@ View.TextDisplay = function ViewTexrDisplay({ children, ...restProps }) {
 View.Header = function ViewHeader({ children, ...restProps }) {
   return <Header {...restProps}>{children}</Header>;
 };
-// View.ImageFit = function ViewImageFit({ children, ...restProps }) {
-//   return <ImageFit {...restProps}>{children}</ImageFit>;
-// };
 
 View.Image = function ViewImage({ ...restProps }) {
   return <Image {...restProps} />;
@@ -57,6 +57,18 @@ View.Image = function ViewImage({ ...restProps }) {
 
 View.Figcaption = function ViewFigcaption({ children, ...restProps }) {
   return <Figcaption {...restProps}>{children}</Figcaption>;
+};
+
+View.H1 = function ViewH1({ children, ...restProps }) {
+  return <H1 {...restProps}>{children}</H1>;
+};
+
+View.Textwrapper = function ViewTextwrapper({ children, ...restProps }) {
+  return <Textwrapper {...restProps}>{children}</Textwrapper>;
+};
+
+View.P = function ViewP({ children, ...restProps }) {
+  return <P {...restProps}>{children}</P>;
 };
 
 View.H2 = function ViewH2({ children, ...restProps }) {
