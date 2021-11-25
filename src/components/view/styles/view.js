@@ -91,6 +91,7 @@ export const P = styled.p`
 export const H2 = styled.h2`
   font-weight: 900;
   font-size: 10vh;
+  color: #eae2d2;
   text-decoration: underline overline;
   font-family: "Voyage-Regular", sans-serif;
 `;
@@ -198,7 +199,18 @@ export const ButtonWrapper = styled.div`
   right: 80px;
 `;
 
-// export const Columnwrapper = styled.div``;
-// export const Columnlayout = styled.div``;
-// export const Columnleft = styled.div``;
-// export const Columnright = styled.div``;
+export const Columnwrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+export const Columnlayout = styled.div`
+  width: 50%;
+`;
+export const Columnleft = styled.div`
+  font-size: 1em;
+  color: black;
+`;
+export const Columnright = styled.div`
+  font-size: 1em;
+  color: black;
+`;

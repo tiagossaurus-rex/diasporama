@@ -38,6 +38,14 @@ export default function Flicker(props) {
   //     columnRight.push(paragraph);
   //   }
   // });
+  const text = props.paragraph;
+
+  const splitText = text.split(".");
+
+  const columnLeft = splitText.slice(0, splitText.length / 2);
+
+  const columnRight = splitText.slice(splitText.length / 2, splitText.length);
+  console.log(columnRight);
 
   return (
     <>
@@ -45,24 +53,16 @@ export default function Flicker(props) {
         <View.Header>
           <View.Textwrapper>
             <View.H1>{props.title}</View.H1>
-            <View.P>{props.paragraph}</View.P>
+            {/* <View.P>{props.paragraph}</View.P> */}
 
-            {/* <View.Columnwrapper>
+            <View.Columnwrapper>
               <View.Columnlayout>
-                {[
-                  columnLeft.map((paragraph, index) => {
-                    return (
-                      <View.Columnleft paragraph={paragraph} key={index} />
-                    );
-                  }),
-                ]}
+                <View.Columnleft>{columnLeft}</View.Columnleft>
               </View.Columnlayout>
               <View.Columnlayout>
-                {columnRight.map((paragraph, index) => {
-                  return <View.Columnright paragraph={paragraph} key={index} />;
-                })}
+                <View.Columnright>{columnRight}</View.Columnright>
               </View.Columnlayout>
-            </View.Columnwrapper> */}
+            </View.Columnwrapper>
           </View.Textwrapper>
           <View.ButtonWrapper
             onClick={() => {

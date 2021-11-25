@@ -12,10 +12,10 @@ import {
   H1,
   P,
   H2,
-  // Columnwrapper,
-  // Columnlayout,
-  // Columnleft,
-  // Columnright,
+  Columnwrapper,
+  Columnlayout,
+  Columnleft,
+  Columnright,
   Play,
   Pause,
   Close,
@@ -81,21 +81,21 @@ View.P = function ViewP({ children, ...restProps }) {
 
 //Columns layout here
 
-// View.Columnwrapper = function Viewcolumnwrapper({ children, ...restProps }) {
-//   return <Columnwrapper {...restProps}>{children}</Columnwrapper>;
-// };
+View.Columnwrapper = function Viewcolumnwrapper({ children, ...restProps }) {
+  return <Columnwrapper {...restProps}>{children}</Columnwrapper>;
+};
 
-// View.Columnlayout = function Viewcolumnlayout({ children, ...restProps }) {
-//   return <Columnlayout {...restProps}>{children}</Columnlayout>;
-// };
+View.Columnlayout = function Viewcolumnlayout({ children, ...restProps }) {
+  return <Columnlayout {...restProps}>{children}</Columnlayout>;
+};
 
-// View.Columnleft = function Viewcolumnleft({ children, ...restProps }) {
-//   return <Columnleft {...restProps}>{children}</Columnleft>;
-// };
+View.Columnleft = function Viewcolumnleft({ children, ...restProps }) {
+  return <Columnleft {...restProps}>{children}</Columnleft>;
+};
 
-// View.Columnright = function Viewcolumnright({ children, ...restProps }) {
-//   return <Columnright {...restProps}>{children}</Columnright>;
-// };
+View.Columnright = function Viewcolumnright({ children, ...restProps }) {
+  return <Columnright {...restProps}>{children}</Columnright>;
+};
 
 View.Play = function ViewPlay({ children, ...restProps }) {
   return <Play {...restProps}>{children}</Play>;
