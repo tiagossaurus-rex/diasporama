@@ -19,6 +19,7 @@ import {
   Play,
   Pause,
   Close,
+  Controlswrapper,
   ButtonWrapper,
   CloseWrapper,
 } from "./styles/view";
@@ -105,6 +106,13 @@ View.Pause = function ViewPause({ children, ...restProps }) {
 };
 View.Close = function ViewClose({ children, ...restProps }) {
   return <Close {...restProps}>{children}</Close>;
+};
+
+View.Controlswrapper = function ViewControlswrapper({
+  children,
+  ...restProps
+}) {
+  return <Controlswrapper {...restProps}>{children}</Controlswrapper>;
 };
 
 View.CloseWrapper = function ViewCloseWrapper({ children, ...restProps }) {

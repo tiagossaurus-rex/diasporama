@@ -118,7 +118,6 @@ export const Play = styled.button`
 export const Pause = styled.button`
   border: none;
   background-color: transparent;
-  cursor: pointer;
   top: 12px;
   left: 12px;
   display: block;
@@ -137,7 +136,6 @@ export const Close = styled.button`
   border: 0;
   left: 2px;
   bottom: 2px;
-  cursor: pointer;
   height: 24px;
   width: 24px;
   padding: 0;
@@ -171,7 +169,6 @@ export const CloseWrapper = styled.div`
   justify-content: center;
   overflow: hidden;
   display: flex;
-  cursor: pointer;
   position: fixed;
   z-index: 4;
   top: unset;
@@ -189,7 +186,6 @@ export const ButtonWrapper = styled.div`
   overflow: hidden;
   display: flex;
   align-items: center;
-  cursor: pointer;
   position: fixed;
   height: 20px;
   width: 20px;
@@ -199,12 +195,21 @@ export const ButtonWrapper = styled.div`
   right: 80px;
 `;
 
+export const Controlswrapper = styled.div`
+  display: flex;
+`;
 export const Columnwrapper = styled.div`
   display: flex;
-  flex-direction: column;
+
+  @media (max-width: 900px) {
+    flex-direction: row;
+  }
 `;
 export const Columnlayout = styled.div`
   width: 50%;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 `;
 export const Columnleft = styled.div`
   font-size: 1em;

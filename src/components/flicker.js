@@ -39,11 +39,8 @@ export default function Flicker(props) {
   //   }
   // });
   const text = props.paragraph;
-
   const splitText = text.split(".");
-
   const columnLeft = splitText.slice(0, splitText.length / 2);
-
   const columnRight = splitText.slice(splitText.length / 2, splitText.length);
   console.log(columnRight);
 
@@ -53,8 +50,6 @@ export default function Flicker(props) {
         <View.Header>
           <View.Textwrapper>
             <View.H1>{props.title}</View.H1>
-            {/* <View.P>{props.paragraph}</View.P> */}
-
             <View.Columnwrapper>
               <View.Columnlayout>
                 <View.Columnleft>{columnLeft}</View.Columnleft>
@@ -64,19 +59,21 @@ export default function Flicker(props) {
               </View.Columnlayout>
             </View.Columnwrapper>
           </View.Textwrapper>
-          <View.ButtonWrapper
-            onClick={() => {
-              setIsPlaying(!isPlaying);
-            }}
-          >
-            {isPlaying ? <View.Pause /> : <View.Play />}
-          </View.ButtonWrapper>
+          <View.Controlswrapper>
+            <View.ButtonWrapper
+              onClick={() => {
+                setIsPlaying(!isPlaying);
+              }}
+            >
+              {isPlaying ? <View.Pause /> : <View.Play />}
+            </View.ButtonWrapper>
 
-          <View.CloseWrapper>
-            <Link to="/Projects">
-              <View.Close />
-            </Link>
-          </View.CloseWrapper>
+            <View.CloseWrapper>
+              <Link to="/Projects">
+                <View.Close />
+              </Link>
+            </View.CloseWrapper>
+          </View.Controlswrapper>
         </View.Header>
         <View.Wrapper>
           <View.Image
