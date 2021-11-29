@@ -1,70 +1,49 @@
 import React from "react";
 import styled from "styled-components";
-// import {Header} from "./components/header";
-
+import { Link } from "react-router-dom";
+import Burger from "./Burger";
 
 const Nav = styled.nav`
-
-  background: #eae2d2;
   width: 100%;
-  height: 100%;
-//  height: ${({ shrinkNav }) => (shrinkNav ? "90px" : "700px")};
+  // height: ${({ shrinkNav }) => (shrinkNav ? "90px" : "150px")};
   border-bottom: 1px solid black;
-  padding: 0 20px;
+  background-color: ;
+  padding: 0 20px 20px;
   display: flex;
-//   justify-content: space-between;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   position: sticky;
-  margin:0;
   top: 0;
-  z-index: 10;
-  transition: height 0.5s;
-  animation-timing-function: linear;
-  
-  .logo {
+  z-index: 3;
+  .h1 {
     font-family: "Voyage-Regular", sans-serif;
-    // font-size: ${({ shrink }) => (shrink ? "3rem" : "100px")};
-    font-size: 2em;
     padding: 15px 0;
-    //transition: font-size 2s;
+    text-decoration: none;
   }
 `;
 
+const StyledLink  = styled(Link)`
+     text-decoration: none;
+`;
 
-
-export default function Navbar(){
-
-  // const [shrink, setShrink] = useState(window.scrollY > 870);
-  // const [shrinkNav, setShrinkNav] = useState(window.scrollY > 870);
+const Navbar = () => {
+  // const [shrink, setShrink] = useState(false);
+  // const [shrinkNav, setShrinkNav] = useState(false);
 
   // useEffect(() => {
   //   window.addEventListener("scroll", () => {
-      
-       
-  //     if (window.scrollY > 870) {
-  //         setShrinkNav(true)
-  //     };
-  //    if  (window.scrollY > 870) {
-  //   setShrink(true) 
-            
-  //    };
+  //     setShrink(window.scrollY > 60);
+  //     setShrinkNav(window.scrollY > 870);
   //   });
-  // }, []);
+  // }, [setShrink]);
 
   
  
   return (
-    
-    <Nav >
-      <div className="logo" id="logoShrink">
-    
-        Racoonteuse
-      </div>
-      {/* <Header /> */}
-      <span>Projects</span>
-      <span>Contact</span>
+      <Nav>
+      <StyledLink to="/">Racoonteuse</StyledLink>
+      <Burger />
     </Nav>
     
   );
 };
+export default Navbar;

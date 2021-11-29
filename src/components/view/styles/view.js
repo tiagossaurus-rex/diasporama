@@ -65,7 +65,7 @@ export const Image = styled.img`
   }
 `;
 export const Figcaption = styled.figcaption`
-  color: red;
+  color: white;
   font-size: 20px;
   z-index: 1;
 `;

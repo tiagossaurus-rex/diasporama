@@ -18,17 +18,3 @@ export default function Shuffle() {
     />
   );
 }
-
-// export default function Shuffle() {
-//   const { slug } = useParams();
-//   const diaporama = diaporamaData.find((d) => d.slug === slug);
-//   return diaporama ? (
-//     <Flicker
-//       diaporama={diaporama.diapo}
-//       title={diaporama.title}
-//       paragraph={diaporama.paragraph}
-//     />
-//   ) : (
-//     <h2>This page doesn't exist</h2>
-//   );
-// }
