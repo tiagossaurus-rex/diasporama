@@ -23,6 +23,9 @@ const Nav = styled.nav`
 
 const StyledLink  = styled(Link)`
      text-decoration: none;
+     color:black;
+     font-family: "Voyage-Regular";
+     font-size:2em;
 `;
 
 const Navbar = () => {
