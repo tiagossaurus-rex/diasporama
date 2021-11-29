@@ -10,10 +10,7 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
  
   
-  li {
-    padding: 18px 10px;
-    text-decoration: none;
-  }
+
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: #eae2d2;
@@ -28,17 +25,45 @@ const Ul = styled.ul`
     transition: transform 0.9s ease-in-out;
     margin: 0;
     
-    li {
-      color: black;
-    }
+    
   }
 `;
 
 const StyledLink  = styled(Link)`      
-    padding:20px; 
+   
     margin-right: 120px;
      text-decoration: none;
      justify-content: space-between;
+    
+   
+      position: relative;
+      color: #000;
+      text-decoration: none;
+    
+    
+    &:hover {
+      font-family: "Voyage-Regular";
+      color: crimson;
+    }
+    
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: crimson;
+      transform: scaleX(0);
+      transform-origin: top right;
+      transition: transform 0.3s ease;
+    }
+    
+    &:hover::before {
+      transform: scaleX(1);
+    }
+    }
 `;
 
 const RightNav = ({ open }) => {
