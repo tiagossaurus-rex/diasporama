@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import {CustomLink} from "../customLink"
 
 
 const Ul = styled.ul`
@@ -68,11 +69,14 @@ const StyledLink  = styled(Link)`
 
 const RightNav = ({ open }) => {
   return (
+ 
     <Ul open={open}>
-      <StyledLink to="/Projects">Projects</StyledLink>
-      <StyledLink to="/Reviews">Reviews</StyledLink>    
-      <StyledLink to="/Contact">Contact</StyledLink>  
+      <CustomLink><StyledLink to="/Projects">Projects</StyledLink></CustomLink>
+      <CustomLink><StyledLink to="/Reviews">Reviews</StyledLink>  </CustomLink>  
+      <CustomLink><StyledLink to="/Contact">Contact</StyledLink> </CustomLink> 
     </Ul>
+
+    
   );
 };
 

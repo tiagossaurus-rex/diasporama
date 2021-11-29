@@ -2,8 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Burger from "./Burger";
+import {CustomLink} from "../customLink"
 
 const Nav = styled.nav`
+background-color: #eae2d2;
   width: 100%;
   // height: ${({ shrinkNav }) => (shrinkNav ? "90px" : "150px")};
   border-bottom: 1px solid black;
@@ -43,7 +45,8 @@ const Navbar = () => {
  
   return (
       <Nav>
-      <StyledLink to="/">Racoonteuse</StyledLink>
+        <CustomLink><StyledLink to="/">Racoonteuse</StyledLink></CustomLink>
+      
       <Burger />
     </Nav>
     

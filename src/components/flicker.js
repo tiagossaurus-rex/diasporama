@@ -73,7 +73,7 @@ export default function Flicker(props) {
           </View.ButtonWrapper>
 
           <View.CloseWrapper>
-            <Link to="/">
+            <Link to="/Projects">
               <View.Close />
             </Link>
           </View.CloseWrapper>

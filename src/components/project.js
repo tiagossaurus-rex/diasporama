@@ -9,7 +9,10 @@ function Project() {
       <ul className="project-list">
         {DiaporamaData.map((diaporama) => (
           <li className="project-list__item" key={diaporama.title}>
-            <Link className="project-list__item-link" to={`/${diaporama.slug}`}>
+            <Link
+              className="project-list__item-link"
+              to={`Projects/${diaporama.slug}`}
+            >
               {diaporama.title}
             </Link>
             <img
