@@ -3,10 +3,11 @@ import styled from "styled-components";
 import RightNav from "./RightNav";
 
 const StyledBurger = styled.div`
+ 
   width: 2rem;
   height: 2rem;
   position: fixed;
-  top: 15px;
+  top: 2px;
   right: 20px;
   z-index: 20;
   display: none;
@@ -16,6 +17,7 @@ const StyledBurger = styled.div`
     flex-flow: column nowrap;
   }
   div {
+    top:2px;
     width: 2rem;
     height: 0.25rem;
     // background-color: ${({ open }) => (open ? "#ccc" : "#333")};

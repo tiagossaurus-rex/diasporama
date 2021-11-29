@@ -8,6 +8,8 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+ 
+  
   li {
     padding: 18px 10px;
     text-decoration: none;
@@ -17,14 +19,15 @@ const Ul = styled.ul`
     background-color: #eae2d2;
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
-    top: 0;
+    top: 40px;
     right: 0;
     height: 100vh;
     width: 100vw;
+    margin-top: 70px;
     padding-top: 3.5rem;
     transition: transform 0.9s ease-in-out;
     margin: 0;
-    z-index: -300;
+    
     li {
       color: black;
     }
