@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 // import ReviewList from "../components/reviewList/reviewList.js";
 import Loader from "../components/loader";
 import ReviewCard from "../components/reviewCard/ReviewCard";
+import Navbar from "../components/nav/Navbar";
 import "./review.css";
 
 export function Review() {
@@ -41,6 +42,7 @@ export function Review() {
     <>
       {!loading && (
         <>
+          <Navbar />
           <div className="review-header">
             <h1>Reviews</h1>
           </div>
