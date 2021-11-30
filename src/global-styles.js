@@ -19,6 +19,7 @@ url("//db.onlinewebfonts.com/t/d18acb2db67fb3aae1ccd198d37a10e9.woff") format("w
  
  * {
     cursor: none;
+    box-sizing: border-box;
   }
     html, body {
         font-family: "Josefin Sans", sans-serif;
