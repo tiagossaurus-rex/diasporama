@@ -11,7 +11,7 @@ export const Section = styled.section`
   }
 `;
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.section`
   // background-color: black;
   // margin: 0;
   position: relative;
@@ -75,7 +75,7 @@ export const Header = styled.header`
   height: 50vh;
 `;
 
-export const Textwrapper = styled.div`
+export const Textwrapper = styled.section`
   padding: 20px;
 `;
 export const H1 = styled.h1`
