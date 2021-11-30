@@ -128,8 +128,8 @@ export const Pause = styled.button`
   content: "";
   box-sizing: border-box;
   border-color: black;
-  width: 20px;
-  height: 20px;
+  width: 36px;
+  height: 36px;
   border-style: double;
   border-width: 0px 0px 0px 15px;
   margin-right: -10px;
@@ -140,16 +140,16 @@ export const Close = styled.button`
   border: 0;
   left: 2px;
   bottom: 2px;
-  height: 24px;
-  width: 24px;
+  height: 20px;
+  width: 20px;
   padding: 0;
   position: relative;
   &::before,
   &::after {
     background-color: black;
     content: "";
-    height: 24px;
-    width: 2px;
+    height: 20px;
+    width: 20px;
     position: absolute;
     top: 0;
     left: 9px;
@@ -166,8 +166,8 @@ export const CloseWrapper = styled.div`
   background: transparent;
   border: 2px solid black;
   border-radius: 30px;
-  height: 20px;
-  width: 20px;
+  height: 36px;
+  width: 36px;
   padding: 8px;
   align-items: center;
   justify-content: center;
@@ -191,8 +191,8 @@ export const ButtonWrapper = styled.div`
   display: flex;
   align-items: center;
   position: fixed;
-  height: 20px;
-  width: 20px;
+  height: 36px;
+  width: 36px;
   z-index: 4;
   top: unset;
   bottom: 20px;
