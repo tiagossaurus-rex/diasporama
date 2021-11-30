@@ -71,8 +71,9 @@ export const Figcaption = styled.figcaption`
 `;
 
 export const Header = styled.header`
+  overflow: auto;
   width: 50vw;
-  height: 50vh;
+  padding-bottom: 50px;
 `;
 
 export const Textwrapper = styled.section`
@@ -218,12 +219,10 @@ export const Columnlayout = styled.div`
     width: 50%;
   }
 `;
-export const Columnleft = styled.div`
-  align-items: flex-start;
-  font-size: 1em;
-  color: black;
-`;
-export const Columnright = styled.div`
+
+export const Column = styled.div`
+  column-count: 2;
+  column-gap: 10px;
   align-items: flex-end;
   font-size: 1em;
   color: black;

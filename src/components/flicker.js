@@ -39,10 +39,10 @@ export default function Flicker(props) {
   //   }
   // });
   const text = props.paragraph;
-  const splitText = text.split(".");
-  const columnLeft = splitText.slice(0, splitText.length / 2);
-  const columnRight = splitText.slice(splitText.length / 2, splitText.length);
-  console.log(columnRight);
+  // const splitText = text.split(".");
+  // const columnLeft = splitText.slice(0, splitText.length / 2);
+  // const columnRight = splitText.slice(splitText.length / 2, splitText.length);
+  // console.log(columnRight);
 
   return (
     <>
@@ -52,10 +52,7 @@ export default function Flicker(props) {
             <View.H1>{props.title}</View.H1>
             <View.Columnwrapper>
               <View.Columnlayout>
-                <View.Columnleft>{columnLeft}</View.Columnleft>
-              </View.Columnlayout>
-              <View.Columnlayout>
-                <View.Columnright>{columnRight}</View.Columnright>
+                <View.Column>{text}</View.Column>
               </View.Columnlayout>
             </View.Columnwrapper>
             <View.Controlswrapper>

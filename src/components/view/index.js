@@ -14,8 +14,7 @@ import {
   H2,
   Columnwrapper,
   Columnlayout,
-  Columnleft,
-  Columnright,
+  Column,
   Play,
   Pause,
   Close,
@@ -90,12 +89,8 @@ View.Columnlayout = function Viewcolumnlayout({ children, ...restProps }) {
   return <Columnlayout {...restProps}>{children}</Columnlayout>;
 };
 
-View.Columnleft = function Viewcolumnleft({ children, ...restProps }) {
-  return <Columnleft {...restProps}>{children}</Columnleft>;
-};
-
-View.Columnright = function Viewcolumnright({ children, ...restProps }) {
-  return <Columnright {...restProps}>{children}</Columnright>;
+View.Column = function Viewcolumn({ children, ...restProps }) {
+  return <Column {...restProps}>{children}</Column>;
 };
 
 View.Play = function ViewPlay({ children, ...restProps }) {
