@@ -76,6 +76,9 @@ export const Header = styled.header`
 `;
 
 export const Textwrapper = styled.section`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 20px;
 `;
 export const H1 = styled.h1`
