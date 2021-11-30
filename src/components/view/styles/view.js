@@ -24,10 +24,10 @@ export const Wrapper = styled.div`
 export const Figure = styled.figure`
   margin: 0;
   position: relative;
-  width: 100%;
+  width: 50%;
   @media (max-width: 900px) {
-    flex-grow: 1;
-    width: 100vw;
+    // flex-grow: 1;
+    width: 30vw;
   }
 `;
 export const Text = styled.div`
@@ -200,22 +200,28 @@ export const Controlswrapper = styled.div`
 `;
 export const Columnwrapper = styled.div`
   display: flex;
+  width: 50vw;
+  flex-direction: row;
 
   @media (max-width: 900px) {
     flex-direction: row;
   }
 `;
 export const Columnlayout = styled.div`
-  width: 50%;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
   @media (max-width: 900px) {
-    width: 100%;
+    width: 50%;
   }
 `;
 export const Columnleft = styled.div`
+  align-items: flex-start;
   font-size: 1em;
   color: black;
 `;
 export const Columnright = styled.div`
+  align-items: flex-end;
   font-size: 1em;
   color: black;
 `;
