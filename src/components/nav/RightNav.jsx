@@ -16,7 +16,7 @@ const Ul = styled.ul`
     flex-flow: column nowrap;
     background-color: #eae2d2;
     position: fixed;
-    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+    transform: ${({ open }) => (open ? "translateX(-0)" : "translateX(-100%)")};
     top: 60px;
     right: 0;
     height: 100vh;
