@@ -203,8 +203,8 @@ export const Controlswrapper = styled.div`
 `;
 export const Columnwrapper = styled.div`
   display: flex;
-  width: 50vw;
-  flex-direction: row;
+  width: 80vw;
+  flex-direction: column;
 
   @media (max-width: 900px) {
     flex-direction: row;
@@ -215,7 +215,7 @@ export const Columnlayout = styled.div`
   // width: 100%;
   flex-direction: row;
   @media (max-width: 900px) {
-    width: 50%;
+    // width: 50%;
   }
 `;
 
