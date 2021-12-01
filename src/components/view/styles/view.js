@@ -138,18 +138,17 @@ export const Pause = styled.button`
 export const Close = styled.button`
   background: none;
   border: 0;
-  left: 2px;
-  bottom: 2px;
-  height: 20px;
-  width: 20px;
+  cursor: pointer;
+  height: 27px;
+  width: 21px;
   padding: 0;
   position: relative;
   &::before,
   &::after {
-    background-color: black;
+    background-color: #000;
     content: "";
-    height: 20px;
-    width: 20px;
+    height: 24px;
+    width: 2px;
     position: absolute;
     top: 0;
     left: 9px;
@@ -213,7 +212,7 @@ export const Columnwrapper = styled.div`
 `;
 export const Columnlayout = styled.div`
   display: flex;
-  width: 100%;
+  // width: 100%;
   flex-direction: row;
   @media (max-width: 900px) {
     width: 50%;
@@ -221,9 +220,13 @@ export const Columnlayout = styled.div`
 `;
 
 export const Column = styled.div`
-  column-count: 2;
-  column-gap: 10px;
-  align-items: flex-end;
+  column-count: 1;
+  align-items: flex-start;
   font-size: 1em;
   color: black;
+  @media (min-width: 900px) {
+    column-count: 2;
+    column-gap: 10px;
+    align-items: flex-end;
+  }
 `;
