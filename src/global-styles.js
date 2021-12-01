@@ -3,9 +3,10 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
 
 @font-face {
-    font-family: "Voyage-Regular.eot";
+    font-family: "Voyage-Regular";
     src: url("../../fonts/Voyage-Regular.woff2") format("woff2"),
            url("../../fonts/Voyage-Regular.woff") format("woff");
+           url("../../fonts/Voyage-Regular.eot") format("eot");
          }
 
 @font-face {font-family: "YoungSerif"; 

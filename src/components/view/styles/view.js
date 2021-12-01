@@ -16,8 +16,9 @@ export const Wrapper = styled.section`
   // margin: 0;
   position: relative;
   width: 50vw;
+  flex-direction: column;
   @media (max-width: 900px) {
-    flex-direction: column-reverse;
+    flex-direction: row;
   }
 `;
 
