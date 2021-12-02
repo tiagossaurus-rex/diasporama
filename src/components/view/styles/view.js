@@ -123,17 +123,32 @@ export const Play = styled.button`
 export const Pause = styled.button`
   border: none;
   background-color: transparent;
-  top: 12px;
-  left: 12px;
-  display: block;
-  content: "";
-  box-sizing: border-box;
-  border-color: black;
-  width: 36px;
-  height: 36px;
-  border-style: double;
-  border-width: 0px 0px 0px 15px;
-  margin-right: -10px;
+  // top: 12px;
+  // left: 12px;
+  left: 2px;
+  top: 1px;
+  cursor: pointer;
+  height: 27px;
+  width: 21px;
+  padding: 1px;
+  position: relative;
+  &::before,
+  &::after {
+    background-color: #000;
+    content: "";
+    height: 24px;
+    width: 2px;
+    position: absolute;
+    top: 0;
+    left: 9px;
+  }
+  &::before {
+    transform: rotate(180deg);
+    left: 1px;
+  }
+  &::after {
+    transform: rotate(180deg);
+  }
 `;
 
 export const Close = styled.button`
