@@ -3,15 +3,15 @@ import styled, { keyframes } from "styled-components";
 
 const fadeIn = keyframes`
   from {
-    opacity: 0.3;
+    opacity: 0.9;
   
   }
   to {
-    opacity: 0.09;
+    opacity: 0;
   
   }
 `;
-const FadeIn = ({ duration = 600, delay = 0, children, ...delegated }) => {
+const FadeIn = ({ duration = 800, delay = 0, children, ...delegated }) => {
   return (
     <Wrapper
       {...delegated}
