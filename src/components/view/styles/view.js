@@ -193,6 +193,8 @@ export const CloseWrapper = styled.div`
   top: unset;
   bottom: 20px;
   right: 20px;
+  &:hover {
+    background-color: rgba(244, 225, 180, 0.9);
 `;
 
 export const ButtonWrapper = styled.div`
@@ -212,6 +214,8 @@ export const ButtonWrapper = styled.div`
   top: unset;
   bottom: 20px;
   right: 80px;
+  &:hover {
+    background-color: rgba(244, 225, 180, 0.9);
 `;
 
 export const Controlswrapper = styled.div`
@@ -228,10 +232,10 @@ export const Columnwrapper = styled.div`
 `;
 export const Columnlayout = styled.div`
   display: flex;
-  // width: 100%;
+  width: 100%;
   flex-direction: row;
   @media (max-width: 900px) {
-    // width: 50%;
+    width: 50%;
   }
 `;
 

@@ -43,7 +43,7 @@ const StyledLink  = styled(Link)`
     
     
     &:hover {
-      font-family: "Voyage-Regular";
+      // font-family: "Voyage-Regular";
       color: crimson;
     }
     
