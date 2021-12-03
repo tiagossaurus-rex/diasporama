@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   display: flex;
-  height: 100vh;
+  height: 80vh;
   justify-content: space-between;
   flex-direction: row-reverse;
 
