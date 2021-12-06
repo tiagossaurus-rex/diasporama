@@ -16,9 +16,12 @@ export const Wrapper = styled.section`
   // margin: 0;
   position: relative;
   width: 50vw;
+  height: 100vh;
   flex-direction: column;
   @media (max-width: 900px) {
     flex-direction: row;
+    width: 100vh;
+    height: 60vh;
   }
 `;
 
@@ -39,14 +42,15 @@ export const Text = styled.div`
   border-radius: 15px;
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 50vw;
   height: 100vh;
   background-color: rgba(0, 0, 0);
   color: white;
   z-index: 1;
   visibility: ${(props) => (props.flip ? "visible" : "hidden")};
   @media (max-width: 900px) {
-    width: 100vw;
+    width: 100vh;
+    height: 60vh;
   }
 `;
 
@@ -56,13 +60,15 @@ export const TextDisplay = styled.h2`
 
 export const Image = styled.img`
   padding-top: 0;
-  height: 100vh;
+
   // // position: fixed;
   object-fit: cover;
   border-radius: 15px;
-  width: 100%;
+  width: 50vw;
+  height: 100vh;
   @media (max-width: 900px) {
-    width: 200%;
+    width: 100vh;
+    height: 60vh;
   }
 `;
 export const Figcaption = styled.figcaption`
@@ -73,8 +79,13 @@ export const Figcaption = styled.figcaption`
 
 export const Header = styled.header`
   overflow: auto;
-  width: 50vw;
+  width: 100vw;
+  height: 50vh;
   padding-bottom: 50px;
+  @media (max-width: 900px) {
+    width: 50vh;
+    height: 80vh;
+  }
 `;
 
 export const Textwrapper = styled.section`
@@ -223,27 +234,28 @@ export const Controlswrapper = styled.div`
 `;
 export const Columnwrapper = styled.div`
   display: flex;
-  width: 80vw;
+  // width: 80vw;
   flex-direction: column;
 
-  @media (max-width: 900px) {
-    flex-direction: row;
-  }
+  // @media (max-width: 900px) {
+  //   flex-direction: row;
+  // }
 `;
 export const Columnlayout = styled.div`
   display: flex;
   width: 100%;
-  flex-direction: row;
+  // flex-direction: row;
   @media (max-width: 900px) {
     width: 50%;
   }
 `;
 
 export const Column = styled.div`
-  column-count: 1;
-  align-items: flex-start;
+  column-count: 0;
+  // align-items: flex-start;
   font-size: 1em;
   color: black;
+  width: 100%;
   @media (min-width: 900px) {
     column-count: 2;
     column-gap: 10px;

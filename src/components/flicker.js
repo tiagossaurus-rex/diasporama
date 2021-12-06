@@ -55,22 +55,22 @@ export default function Flicker(props) {
                 <View.Column>{text}</View.Column>
               </View.Columnlayout>
             </View.Columnwrapper>
-            <View.Controlswrapper>
-              <View.ButtonWrapper
-                onClick={() => {
-                  setIsPlaying(!isPlaying);
-                }}
-              >
-                {isPlaying ? <View.Pause /> : <View.Play />}
-              </View.ButtonWrapper>
-
-              <View.CloseWrapper>
-                <Link to="/Projects">
-                  <View.Close />
-                </Link>
-              </View.CloseWrapper>
-            </View.Controlswrapper>
           </View.Textwrapper>
+          <View.Controlswrapper>
+            <View.ButtonWrapper
+              onClick={() => {
+                setIsPlaying(!isPlaying);
+              }}
+            >
+              {isPlaying ? <View.Pause /> : <View.Play />}
+            </View.ButtonWrapper>
+
+            <View.CloseWrapper>
+              <Link to="/Projects">
+                <View.Close />
+              </Link>
+            </View.CloseWrapper>
+          </View.Controlswrapper>
         </View.Header>
         <View.Wrapper>
           <View.Image
