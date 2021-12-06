@@ -5,12 +5,14 @@ import Burger from "./Burger";
 import {CustomLink} from "../customLink"
 
 const Nav = styled.nav`
+align-items: center; */
+    justify-content: space-evenly;
 background-color: #eae2d2;
   width: 100%;
   // height: ${({ shrinkNav }) => (shrinkNav ? "90px" : "150px")};
   border-bottom: 1px solid black;
   background-color: ;
-  padding: 0 20px 20px;
+  padding: 5px 20px;
   display: flex;
   justify-content: space-between;
   position: sticky;
@@ -28,6 +30,8 @@ const StyledLink  = styled(Link)`
      color:black;
      font-family: "Voyage-Regular";
      font-size:2em;
+     display: flex;
+    align-items: center;
 `;
 
 const Navbar = () => {

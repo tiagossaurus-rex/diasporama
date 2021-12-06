@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   display: flex;
-  height: 80vh;
+  height: 100vh;
   justify-content: space-between;
   flex-direction: row-reverse;
 
   @media (max-width: 900px) {
     flex-direction: column-reverse;
+    height: 100vh;
   }
 `;
 
@@ -80,11 +81,9 @@ export const Figcaption = styled.figcaption`
 export const Header = styled.header`
   overflow: auto;
   width: 100vw;
-  height: 50vh;
-  padding-bottom: 50px;
+
   @media (max-width: 900px) {
-    width: 50vh;
-    height: 80vh;
+    width: 100vw;
   }
 `;
 
@@ -246,7 +245,6 @@ export const Columnlayout = styled.div`
   width: 100%;
   // flex-direction: row;
   @media (max-width: 900px) {
-    width: 50%;
   }
 `;
 
@@ -260,5 +258,6 @@ export const Column = styled.div`
     column-count: 2;
     column-gap: 10px;
     align-items: flex-end;
+    padding-bottom: 20px;
   }
 `;
