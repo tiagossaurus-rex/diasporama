@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import DiaporamaData from "../fixtures/diaporama.json";
 import { CustomLink } from "./customLink";
-import slide from ".././icons/slide2.png";
 import "./project.css";
 
 function Project() {
@@ -18,8 +17,6 @@ function Project() {
               >
                 {diaporama.title}
               </Link>
-              {/* <img src={slide} /> */}
-              {/* <div className="project-list__item-image"> */}
               <img
                 className="project-list__item-image"
                 src={process.env.PUBLIC_URL + diaporama.slugImage}
