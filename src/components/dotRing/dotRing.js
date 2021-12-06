@@ -21,10 +21,10 @@ export const DotRing = () => {
         style={{ left: `${x}px`, top: `${y}px` }}
         className={"ring " + cursorType}
       ></div>
-      <div
+      {/* <div
         className={"dot " + cursorType}
         style={{ left: `${x}px`, top: `${y}px` }}
-      ></div>
+      ></div> */}
     </>
   );
 };
