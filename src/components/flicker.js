@@ -4,6 +4,7 @@ import useSound from "use-sound";
 import click from "../sound/click.mp3";
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+
 import View from "./view";
 
 export default function Flicker(props) {
