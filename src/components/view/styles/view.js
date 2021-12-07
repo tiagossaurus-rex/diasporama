@@ -62,7 +62,7 @@ export const TextDisplay = styled.h2`
 export const Image = styled.img`
   padding-top: 0;
 
-  // // position: fixed;
+  // position: fixed;
   object-fit: cover;
   border-radius: 15px;
   width: 50vw;
@@ -205,6 +205,10 @@ export const CloseWrapper = styled.div`
   right: 20px;
   &:hover {
     background-color: rgba(244, 225, 180, 0.9);
+  }
+  @media (max-width: 900px) {
+    top: 495px;
+  }
 `;
 
 export const ButtonWrapper = styled.div`
@@ -226,6 +230,10 @@ export const ButtonWrapper = styled.div`
   right: 80px;
   &:hover {
     background-color: rgba(244, 225, 180, 0.9);
+  }
+  @media (max-width: 900px) {
+    top: 495px;
+  }
 `;
 
 export const Controlswrapper = styled.div`
