@@ -6,15 +6,15 @@ import {CustomLink} from "../customLink"
 
 const Nav = styled.nav`
 align-items: center; */
-    justify-content: space-evenly;
 background-color: #eae2d2;
   width: 100%;
   // height: ${({ shrinkNav }) => (shrinkNav ? "90px" : "150px")};
   border-bottom: 1px solid black;
   background-color: ;
-  padding: 5px 20px;
+  padding: 0 50px;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   position: sticky;
   top: 0;
   z-index: 3;
@@ -22,6 +22,9 @@ background-color: #eae2d2;
     font-family: "Voyage-Regular", sans-serif;
     padding: 15px 0;
     text-decoration: none;
+  }
+  @media (max-width: 768px){
+    background-color:#eae2d2;;
   }
 `;
 

@@ -9,20 +9,20 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
- 
-  
 
   @media (max-width: 768px) {
+    align-items: flex-end;
+    justify-content: space-evenly;
     flex-flow: column nowrap;
     background-color: #eae2d2;
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(-0)" : "translateX(-100%)")};
-    top: 60px;
+    top: 39px;
     right: 0;
     height: 100vh;
     width: 100vw;
-    margin-top: 70px;
-    padding-top: 3.5rem;
+    // margin-top: 70px;
+    padding-top: 0;
     transition: transform 0.9s ease-in-out;
     margin: 0;
     
