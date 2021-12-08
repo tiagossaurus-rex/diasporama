@@ -65,12 +65,21 @@
 
 
 .project-list__item-image {
+  position:relative;
   width: 100%;
   margin-top: 27px;
   z-index: 1;
-
-  
 }
+
+.project-list__item-slide {
+  position: absolute;
+  width:100%;
+  top:5px;
+  left:5px;
+
+}
+  
+
 @media (min-width: 900px) {
 
   .project-list__item-image {
@@ -79,8 +88,8 @@
     top: 0;
     left: 0;
     right: 0;
-    width: 71vw;
-    height: auto;
+    /* width: 71vw;
+    height: auto; */
     max-width: 1000px;
     max-height: 65vh;
     margin: auto;
@@ -94,7 +103,7 @@
   }
 
 
-  .project-list__item-link:hover + .project-list__item-image{
+  .project-list__item-link:hover + .project-list__item-image {
     visibility: visible;
     
   }

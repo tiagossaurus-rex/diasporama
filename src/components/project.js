@@ -17,13 +17,17 @@ function Project() {
               >
                 {diaporama.title}
               </Link>
+
               <img
                 className="project-list__item-image"
                 src={process.env.PUBLIC_URL + diaporama.slugImage}
                 alt={diaporama.diapo.alt}
               />
-              {/* <img src={slide} alt="slide" />
-              </div> */}
+              {/* <img
+                  className="project-list__item-slide"
+                  src={process.env.PUBLIC_URL + diaporama.slugSlide}
+                  alt={diaporama.slideAlt}
+                /> */}
             </li>
           </CustomLink>
         ))}

@@ -7,6 +7,8 @@
       "direction": "row-reverse",
       "color": "#71BC8F",
       "slugImage": "/images/animage2.jpg",
+      "slugSlide": "/images/diapositives-anciennes-flip3.png",
+      "slideAlt": "slide",
       "slugAlt":"chapeau",
     
       
@@ -42,6 +44,8 @@
       "direction": "row",
       "color": "coral",
       "slugImage": "/images/animimage3.jpg",
+      "slugSlide": "/images/diapositives-anciennes3.png",
+      "slideAlt": "slide",
       "slugAlt":"haircut",
     
       "diapo": [
@@ -72,6 +76,8 @@
       "direction": "row-reverse",
       "color": "rgb(142, 13, 59)",
       "slugImage": "/images/animimage5.jpg",
+      "slugSlide": "/images/diapositives-anciennes-flip1.png",
+      "slideAlt": "slide",
       "slugAlt": "Stella",
 
       "diapo": [
