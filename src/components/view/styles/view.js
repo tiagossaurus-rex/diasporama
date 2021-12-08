@@ -209,7 +209,7 @@ export const CloseWrapper = styled.div`
   display: flex;
   position: fixed;
   z-index: 4;
-  top: 520px;
+  top: 490px;
   bottom: 20px;
   right: 20px;
   &:hover {
@@ -234,7 +234,7 @@ export const ButtonWrapper = styled.div`
   height: 36px;
   width: 36px;
   z-index: 4;
-  top: 520px;
+  top: 490px;
   bottom: 20px;
   right: 80px;
   &:hover {
