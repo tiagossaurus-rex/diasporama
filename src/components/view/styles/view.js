@@ -2,12 +2,14 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   display: flex;
-  height: 100vh;
-  justify-content: space-between;
-  flex-direction: row-reverse;
+  width: 50vw;
 
-  @media (max-width: 900px) {
-    flex-direction: column-reverse;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+
+  @media (min-width: 900px) {
+    flex-direction: row-reverse;
+    width: 100vw;
     height: 100vh;
   }
 `;
@@ -16,23 +18,25 @@ export const Wrapper = styled.section`
   // background-color: black;
   // margin: 0;
   position: relative;
-  width: 50vw;
-  height: 100vh;
+  width: 100%;
+  height: 60vh;
   flex-direction: column;
-  @media (max-width: 900px) {
+
+  @media (min-width: 900px) {
+    width: 50vw;
+    height: 100vh;
     flex-direction: row;
-    width: 100vh;
-    height: 60vh;
   }
 `;
 
 export const Figure = styled.figure`
   margin: 0;
   position: relative;
-  width: 50%;
-  @media (max-width: 900px) {
+  width: 30vw;
+
+  @media (min-width: 900px) {
     // flex-grow: 1;
-    width: 30vw;
+    width: 50%;
   }
 `;
 export const Text = styled.div`
@@ -43,15 +47,16 @@ export const Text = styled.div`
   border-radius: 15px;
   position: absolute;
   top: 0;
-  width: 50vw;
-  height: 100vh;
+  width: 200%;
+  height: 60vh;
+
   background-color: rgba(0, 0, 0);
   color: white;
   z-index: 1;
   visibility: ${(props) => (props.flip ? "visible" : "hidden")};
-  @media (max-width: 900px) {
-    width: 100vh;
-    height: 60vh;
+  @media (min-width: 900px) {
+    width: 50vw;
+    height: 100vh;
   }
 `;
 
@@ -65,11 +70,12 @@ export const Image = styled.img`
   // position: fixed;
   object-fit: cover;
   border-radius: 15px;
-  width: 50vw;
-  height: 100vh;
-  @media (max-width: 900px) {
-    width: 100vh;
-    height: 60vh;
+  width: 200%;
+  height: 60vh;
+
+  @media (min-width: 900px) {
+    width: 50vw;
+    height: 100vh;
   }
 `;
 export const Figcaption = styled.figcaption`
@@ -79,11 +85,14 @@ export const Figcaption = styled.figcaption`
 `;
 
 export const Header = styled.header`
-  overflow: auto;
   width: 100vw;
+  height: 50vh;
+  overflow: scroll;
 
-  @media (max-width: 900px) {
-    width: 100vw;
+  @media (min-width: 900px) {
+    overflow: auto;
+    width: 50vw;
+    height: 100vh;
   }
 `;
 
@@ -91,7 +100,7 @@ export const Textwrapper = styled.section`
   display: flex;
   // flex-direction: row;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 5px 20px;
 `;
 export const H1 = styled.h1`
   font-weight: 900;
@@ -200,14 +209,14 @@ export const CloseWrapper = styled.div`
   display: flex;
   position: fixed;
   z-index: 4;
-  top: unset;
+  top: 475px;
   bottom: 20px;
   right: 20px;
   &:hover {
     background-color: rgba(244, 225, 180, 0.9);
   }
-  @media (max-width: 900px) {
-    top: 495px;
+  @media (min-width: 900px) {
+    top: unset;
   }
 `;
 
@@ -225,14 +234,14 @@ export const ButtonWrapper = styled.div`
   height: 36px;
   width: 36px;
   z-index: 4;
-  top: unset;
+  top: 475px;
   bottom: 20px;
   right: 80px;
   &:hover {
     background-color: rgba(244, 225, 180, 0.9);
   }
-  @media (max-width: 900px) {
-    top: 495px;
+  @media (min-width: 900px) {
+    top: unset;
   }
 `;
 
@@ -242,30 +251,34 @@ export const Controlswrapper = styled.div`
 export const Columnwrapper = styled.div`
   display: flex;
   // width: 80vw;
-  flex-direction: column;
+  flex-direction: row;
 
-  // @media (max-width: 900px) {
-  //   flex-direction: row;
-  // }
+  @media (min-width: 900px) {
+    flex-direction: column;
+    width: 80vw;
+  }
 `;
 export const Columnlayout = styled.div`
   display: flex;
-  width: 100%;
+
   // flex-direction: row;
-  @media (max-width: 900px) {
+  @media (min-width: 900px) {
+    width: 100%;
   }
 `;
 
 export const Column = styled.div`
-  column-count: 0;
+  column-count: 1;
   // align-items: flex-start;
   font-size: 1em;
+
   color: black;
-  width: 100%;
+
   @media (min-width: 900px) {
     column-count: 2;
+    width: 100%;
+    padding-bottom: 20px;
     column-gap: 10px;
     align-items: flex-end;
-    padding-bottom: 20px;
   }
 `;
