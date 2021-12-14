@@ -6,7 +6,7 @@ import "./project.css";
 
 function Project() {
   return (
-    <header>
+    <section>
       <ul className="project-list">
         {DiaporamaData.map((diaporama) => (
           <CustomLink>
@@ -32,7 +32,7 @@ function Project() {
           </CustomLink>
         ))}
       </ul>
-    </header>
+    </section>
   );
 }
 

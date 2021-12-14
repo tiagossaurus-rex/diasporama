@@ -32,7 +32,7 @@ const Ul = styled.ul`
 
 const StyledLink  = styled(Link)`      
    
-    margin-right: 120px;
+    margin-left: 120px;
      text-decoration: none;
      justify-content: space-between;
     

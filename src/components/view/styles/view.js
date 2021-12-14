@@ -87,10 +87,9 @@ export const Figcaption = styled.figcaption`
 export const Header = styled.header`
   width: 100vw;
   height: 50vh;
-  overflow: scroll;
+  overflow: auto;
 
   @media (min-width: 900px) {
-    overflow: auto;
     width: 50vw;
     height: 100vh;
   }

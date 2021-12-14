@@ -6,11 +6,11 @@ import {CustomLink} from "../customLink"
 
 const Nav = styled.nav`
 align-items: center; */
-background-color: #eae2d2;
+background: #eae2d2;
   width: 100%;
   // height: ${({ shrinkNav }) => (shrinkNav ? "90px" : "150px")};
   border-bottom: 1px solid black;
-  background-color: ;
+ 
   padding: 0 50px;
   display: flex;
   justify-content: space-between;
@@ -24,7 +24,7 @@ background-color: #eae2d2;
     text-decoration: none;
   }
   @media (max-width: 768px){
-    background-color:#eae2d2;;
+    background: #eae2d2;
   }
 `;
 
