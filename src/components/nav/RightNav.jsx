@@ -21,8 +21,7 @@ const Ul = styled.ul`
     right: 0;
     height: 100vh;
     width: 100vw;
-    // margin-top: 70px;
-    padding-top: 0;
+    padding: 36px;
     transition: transform 0.9s ease-in-out;
     margin: 0;
     

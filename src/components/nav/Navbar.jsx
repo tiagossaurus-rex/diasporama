@@ -11,7 +11,7 @@ background: #eae2d2;
   // height: ${({ shrinkNav }) => (shrinkNav ? "90px" : "150px")};
   border-bottom: 1px solid black;
  
-  padding: 0 50px;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
