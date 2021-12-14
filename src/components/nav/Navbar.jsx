@@ -5,7 +5,7 @@ import Burger from "./Burger";
 import {CustomLink} from "../customLink"
 
 const Nav = styled.nav`
-align-items: center; */
+align-items: center; 
 background: #eae2d2;
   width: 100%;
   // height: ${({ shrinkNav }) => (shrinkNav ? "90px" : "150px")};
