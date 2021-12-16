@@ -14,7 +14,7 @@ export function Review() {
   const fetchData = useCallback(async () => {
     setError(true);
     try {
-      const response = await fetch("/.netlify/functions/getReviews/");
+      const response = await fetch("/netlify/functions/getReviews/");
       const reviews = await response.json();
 
       const _cardsRight = [];
